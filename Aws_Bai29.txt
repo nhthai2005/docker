@@ -1,0 +1,206 @@
+
+
+
+Các lệnh xóa đồng loạt
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi -f $(docker images -a -q)
+docker-compose up -d
+
+
+
+1. Volume
+# docker volume create       Tạo mạng mới
+# docker volume inspect      Xem chi tiết mạng
+# docker volume ls           Hiển thị những mạng đang có
+# docker volume rm           Xóa volume
+# docker volume prune        Xóa toàn bộ volumn
+
+Ví dụ
+docker volume create project01_code
+docker run --name project01 -p 8081:80 -v project01_code:/usr/local/apache2/htdocs -d httpd
+
+Ví dụ 2
+docker container run --name mysql -e MYSQL_ROOT_PASSWORD=pass -p 3306:3306 -d mysql:5.7
+
+docker volume create pj01_data
+docker container run --name mysql -v pj01_data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=pass -p 3306:3306 -d mysql:5.7
+
+
+2. Networks
+
+Ví dụ 1
+Tạo 1 mạng lớp C
+docker network create --subnet 192.168.1.0/24 network1
+
+Tạo ra 2 container kết nối với mạng này
+docker run -itd --name=container1  --network network1 busybox
+docker run -itd --name=container2  --network network1 busybox
+
+Kiểm tra kết nối giữa 2 mạng
+docker attach container1
+
+Ví dụ 2
+# docker run --name mysql --network network1 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5.7
+# docker run --name wordpress --network network1 -e WORDPRESS_DB_PASSWORD=my-secret-pw -p 8080:80 -d wordpress
+
+
+
+
+
+
+Sampe 1 tạo DB MYSQL
+sample-project/
+             ├ docker/
+             |       └ mysql/
+             |              ├ conf.d/
+             |              |       └ my.cnf
+             |              ├ initdb.d/
+             |              |         ├ schema.sql
+             |              |         └ testdata.sql
+             |              └ Dockerfile
+			 ├ log/mysql
+			 |
+			 |
+			 |
+             └ docker-compose.yml
+			 
+			 
+mkdir pj03
+cd pj03
+mkdir -p docker/mysql/conf.d
+mkdir -p docker/mysql/initdb.d
+mkdir -p docker/mysql/conf.d
+mkdir -p log/mysql
+chmod -Rf 777 log
+
+vi docker/mysql/conf.d/my.cnf
+[mysqld]
+character-set-server=utf8mb4
+explicit-defaults-for-timestamp=1
+general-log=1
+general-log-file=/var/log/mysql/mysqld.log
+
+[client]
+default-character-set=utf8mb4
+
+
+
+vi docker/mysql/initdb.d/schema.sql
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(32) NOT NULL,
+    email VARCHAR(32) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+vi docker/mysql/initdb.d/testdata.sql
+INSERT INTO users (id,name,email) VALUES (1, 'Tuc Anh Ach','achsan@tinhocthatladongian.com');
+
+
+
+vi docker/mysql/Dockerfile
+FROM mysql:5.7
+RUN touch /var/log/mysql/mysqld.log
+
+
+vi docker-compose.yml
+version: '3'
+services:
+  db:
+    build: ./docker/mysql
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: sample_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "3314:3306"
+    volumes:
+      - ./docker/mysql/initdb.d:/docker-entrypoint-initdb.d
+      - ./docker/mysql/conf.d:/etc/mysql/conf.d
+      - ./log/mysql:/var/log/mysql
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:
+
+	  
+- Build container
+docker-compose up -d 
+
+- Truy cập vào container để chạy lệnh
+docker exec -it sampleproject_db_1 bash
+
+$ mysql -u user -p
+
+INSERT INTO users (id,name,email) VALUES (2, 'BAo','bao@mail.co.jp');
+
+
+
+truy cập vào từ ngoài bằng Navicat
+mysql --host 127.0.0.1 --port 3314 -u user -p 
+
+
+
+
+
+Sample 2
+mkdir { my-wordpress-dir-name }
+cd { my-wordpress-dir-name } 
+
+
+docker-compose.yml
+
+version: "2"
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: pj10_wordpress
+    volumes:
+      - "$PWD:/var/www/html"
+      - "$PWD/.docker/backup:/tmp/backup"
+      - "$PWD/.docker/log:/tmp/log"
+    ports:
+      - 8080:80
+    depends_on:
+      - db
+    environment:
+      WORDPRESS_DB_HOST: "db:3306"
+    networks:
+      - pj10_network
+    env_file: .env
+
+  db:
+    image: mysql:5.7
+    container_name: pj10_mysql
+    volumes:
+      - "db-data:/var/lib/mysql"
+    networks:
+      - pj10_network
+    env_file: .env
+
+volumes:
+  db-data:
+
+networks:
+  pj10_network:
+  
+  
+  
+File .env
+WORDPRESS_DB_NAME=wordpress
+WORDPRESS_DB_USER=admin
+WORDPRESS_DB_PASSWORD=pass
+
+MYSQL_RANDOM_ROOT_PASSWORD=yes
+MYSQL_DATABASE=wordpress
+MYSQL_USER=admin
+MYSQL_PASSWORD=pass
+
+
+
+
+
+

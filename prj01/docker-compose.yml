@@ -1,0 +1,9 @@
+version: '3'
+services:                                                                      
+  web:                                                    
+    build: .
+    command: ["/usr/sbin/httpd","-D","FOREGROUND"] 
+    volumes:
+      - ./code:/var/www/html
+    ports:
+      - "80:80"

@@ -1,0 +1,60 @@
+Thực hành AWS/ECS
+
+1. Cài EC2
+#!/bin/bash
+yum update -y
+yum install -y docker
+service docker start
+chkconfig docker on
+curl -L "https://github.com/docker/compose/releases/download/1.11.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
+
+$ mkdir nginx
+$ cd nginx
+$ vi Dockerfile
+FROM nginx
+COPY html /usr/share/nginx/html
+
+
+$ mkdir html
+$ vi html/index.html
+<html>
+<head><title>Tin hoc that la don gian</title></head>
+<body><h1>Xin chao tin hoc that la don gian</h1></body>
+</html>
+
+
+$docker build -t [Image Name]:tag .
+	->docker build -t tinhocthatladongian:v1 .
+
+- AWS ECR Login
+aws ecr get-login --no-include-email --region eu-west-2
+
+
+- Tạo repository lên AWS/ECR(Amazon Elastic Container Registry)
+aws ecr create-repository --repository-name [Repository Name] --region eu-west-2
+->aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+
+
+- Tạo tag version docker image
+docker tag [Image Name]:tag [Repository ULR] đã tạo ra ở bước trên]
+->docker tag tinhocthatladongian:v1 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+
+- Push lên AWS/ECR
+docker push [Repository ULR]
+->docker push 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+
+- Tạo Task trên AWC/ECS
+- Tạo Clusters trên AWC/ECS
+
+
+
+
+
+
+
+Các lệnh xóa đồng loạt
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi -f $(docker images -a -q)

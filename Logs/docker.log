@@ -1,0 +1,935 @@
+Last login: Wed Jul 22 05:34:34 2020 from 115.79.139.146
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-31-4-177 ~]$ clear
+[ec2-user@ip-172-31-4-177 ~]$ clear
+[ec2-user@ip-172-31-4-177 ~]$ ls
+[ec2-user@ip-172-31-4-177 ~]$ ls -l
+total 0
+[ec2-user@ip-172-31-4-177 ~]$ cler
+-bash: cler: command not found
+[ec2-user@ip-172-31-4-177 ~]$ clear
+[ec2-user@ip-172-31-4-177 ~]$ 
+[ec2-user@ip-172-31-4-177 ~]$ 
+[ec2-user@ip-172-31-4-177 ~]$ 
+[ec2-user@ip-172-31-4-177 ~]$ docker -v
+Docker version 19.03.6-ce, build 369ce74
+[ec2-user@ip-172-31-4-177 ~]$ docker-compose -v
+docker-compose version 1.11.2, build dfed245
+[ec2-user@ip-172-31-4-177 ~]$ docker -v
+Docker version 19.03.6-ce, build 369ce74
+[ec2-user@ip-172-31-4-177 ~]$ 
+[ec2-user@ip-172-31-4-177 ~]$ 
+[ec2-user@ip-172-31-4-177 ~]$ 
+[ec2-user@ip-172-31-4-177 ~]$ sudo su -
+[root@ip-172-31-4-177 ~]# aws configure
+AWS Access Key ID [None]: AKIA43UNBAQCDGN5PXUO
+AWS Secret Access Key [None]: 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
+Default region name [None]: us-west-2
+Default output format [None]: json
+[root@ip-172-31-4-177 ~]# aws confgiure ls
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: argument command: Invalid choice, valid choices are:
+
+accessanalyzer                           | acm                                     
+acm-pca                                  | alexaforbusiness                        
+amplify                                  | apigateway                              
+apigatewaymanagementapi                  | apigatewayv2                            
+appconfig                                | application-autoscaling                 
+application-insights                     | appmesh                                 
+appstream                                | appsync                                 
+athena                                   | autoscaling                             
+autoscaling-plans                        | backup                                  
+batch                                    | budgets                                 
+ce                                       | chime                                   
+cloud9                                   | clouddirectory                          
+cloudformation                           | cloudfront                              
+cloudhsm                                 | cloudhsmv2                              
+cloudsearch                              | cloudsearchdomain                       
+cloudtrail                               | cloudwatch                              
+codebuild                                | codecommit                              
+codeguru-reviewer                        | codeguruprofiler                        
+codepipeline                             | codestar                                
+codestar-notifications                   | cognito-identity                        
+cognito-idp                              | cognito-sync                            
+comprehend                               | comprehendmedical                       
+compute-optimizer                        | connect                                 
+connectparticipant                       | cur                                     
+dataexchange                             | datapipeline                            
+datasync                                 | dax                                     
+devicefarm                               | directconnect                           
+discovery                                | dlm                                     
+dms                                      | docdb                                   
+ds                                       | dynamodb                                
+dynamodbstreams                          | ebs                                     
+ec2                                      | ec2-instance-connect                    
+ecr                                      | ecs                                     
+efs                                      | eks                                     
+elastic-inference                        | elasticache                             
+elasticbeanstalk                         | elastictranscoder                       
+elb                                      | elbv2                                   
+emr                                      | es                                      
+events                                   | firehose                                
+fms                                      | forecast                                
+forecastquery                            | frauddetector                           
+fsx                                      | gamelift                                
+glacier                                  | globalaccelerator                       
+glue                                     | greengrass                              
+groundstation                            | guardduty                               
+health                                   | iam                                     
+imagebuilder                             | importexport                            
+inspector                                | iot                                     
+iot-data                                 | iot-jobs-data                           
+iot1click-devices                        | iot1click-projects                      
+iotanalytics                             | iotevents                               
+iotevents-data                           | iotsecuretunneling                      
+iotthingsgraph                           | kafka                                   
+kendra                                   | kinesis                                 
+kinesis-video-archived-media             | kinesis-video-media                     
+kinesis-video-signaling                  | kinesisanalytics                        
+kinesisanalyticsv2                       | kinesisvideo                            
+kms                                      | lakeformation                           
+lambda                                   | lex-models                              
+lex-runtime                              | license-manager                         
+lightsail                                | logs                                    
+machinelearning                          | macie                                   
+managedblockchain                        | marketplace-catalog                     
+marketplace-entitlement                  | marketplacecommerceanalytics            
+mediaconnect                             | mediaconvert                            
+medialive                                | mediapackage                            
+mediapackage-vod                         | mediastore                              
+mediastore-data                          | mediatailor                             
+meteringmarketplace                      | mgh                                     
+migrationhub-config                      | mobile                                  
+mq                                       | mturk                                   
+neptune                                  | networkmanager                          
+opsworks                                 | opsworkscm                              
+organizations                            | outposts                                
+personalize                              | personalize-events                      
+personalize-runtime                      | pi                                      
+pinpoint                                 | pinpoint-email                          
+pinpoint-sms-voice                       | polly                                   
+pricing                                  | qldb                                    
+qldb-session                             | quicksight                              
+ram                                      | rds                                     
+rds-data                                 | redshift                                
+rekognition                              | resource-groups                         
+resourcegroupstaggingapi                 | robomaker                               
+route53                                  | route53domains                          
+route53resolver                          | s3control                               
+sagemaker                                | sagemaker-a2i-runtime                   
+sagemaker-runtime                        | savingsplans                            
+schemas                                  | sdb                                     
+secretsmanager                           | securityhub                             
+serverlessrepo                           | service-quotas                          
+servicecatalog                           | servicediscovery                        
+ses                                      | sesv2                                   
+shield                                   | signer                                  
+sms                                      | sms-voice                               
+snowball                                 | sns                                     
+sqs                                      | ssm                                     
+sso                                      | sso-oidc                                
+stepfunctions                            | storagegateway                          
+sts                                      | support                                 
+swf                                      | textract                                
+transcribe                               | transfer                                
+translate                                | waf                                     
+waf-regional                             | wafv2                                   
+workdocs                                 | worklink                                
+workmail                                 | workmailmessageflow                     
+workspaces                               | xray                                    
+s3api                                    | s3                                      
+configure                                | deploy                                  
+configservice                            | opsworks-cm                             
+runtime.sagemaker                        | history                                 
+help                                    
+
+
+Invalid choice: 'confgiure', maybe you meant:
+
+  * configure
+[root@ip-172-31-4-177 ~]# aws confgiure list
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: argument command: Invalid choice, valid choices are:
+
+accessanalyzer                           | acm                                     
+acm-pca                                  | alexaforbusiness                        
+amplify                                  | apigateway                              
+apigatewaymanagementapi                  | apigatewayv2                            
+appconfig                                | application-autoscaling                 
+application-insights                     | appmesh                                 
+appstream                                | appsync                                 
+athena                                   | autoscaling                             
+autoscaling-plans                        | backup                                  
+batch                                    | budgets                                 
+ce                                       | chime                                   
+cloud9                                   | clouddirectory                          
+cloudformation                           | cloudfront                              
+cloudhsm                                 | cloudhsmv2                              
+cloudsearch                              | cloudsearchdomain                       
+cloudtrail                               | cloudwatch                              
+codebuild                                | codecommit                              
+codeguru-reviewer                        | codeguruprofiler                        
+codepipeline                             | codestar                                
+codestar-notifications                   | cognito-identity                        
+cognito-idp                              | cognito-sync                            
+comprehend                               | comprehendmedical                       
+compute-optimizer                        | connect                                 
+connectparticipant                       | cur                                     
+dataexchange                             | datapipeline                            
+datasync                                 | dax                                     
+devicefarm                               | directconnect                           
+discovery                                | dlm                                     
+dms                                      | docdb                                   
+ds                                       | dynamodb                                
+dynamodbstreams                          | ebs                                     
+ec2                                      | ec2-instance-connect                    
+ecr                                      | ecs                                     
+efs                                      | eks                                     
+elastic-inference                        | elasticache                             
+elasticbeanstalk                         | elastictranscoder                       
+elb                                      | elbv2                                   
+emr                                      | es                                      
+events                                   | firehose                                
+fms                                      | forecast                                
+forecastquery                            | frauddetector                           
+fsx                                      | gamelift                                
+glacier                                  | globalaccelerator                       
+glue                                     | greengrass                              
+groundstation                            | guardduty                               
+health                                   | iam                                     
+imagebuilder                             | importexport                            
+inspector                                | iot                                     
+iot-data                                 | iot-jobs-data                           
+iot1click-devices                        | iot1click-projects                      
+iotanalytics                             | iotevents                               
+iotevents-data                           | iotsecuretunneling                      
+iotthingsgraph                           | kafka                                   
+kendra                                   | kinesis                                 
+kinesis-video-archived-media             | kinesis-video-media                     
+kinesis-video-signaling                  | kinesisanalytics                        
+kinesisanalyticsv2                       | kinesisvideo                            
+kms                                      | lakeformation                           
+lambda                                   | lex-models                              
+lex-runtime                              | license-manager                         
+lightsail                                | logs                                    
+machinelearning                          | macie                                   
+managedblockchain                        | marketplace-catalog                     
+marketplace-entitlement                  | marketplacecommerceanalytics            
+mediaconnect                             | mediaconvert                            
+medialive                                | mediapackage                            
+mediapackage-vod                         | mediastore                              
+mediastore-data                          | mediatailor                             
+meteringmarketplace                      | mgh                                     
+migrationhub-config                      | mobile                                  
+mq                                       | mturk                                   
+neptune                                  | networkmanager                          
+opsworks                                 | opsworkscm                              
+organizations                            | outposts                                
+personalize                              | personalize-events                      
+personalize-runtime                      | pi                                      
+pinpoint                                 | pinpoint-email                          
+pinpoint-sms-voice                       | polly                                   
+pricing                                  | qldb                                    
+qldb-session                             | quicksight                              
+ram                                      | rds                                     
+rds-data                                 | redshift                                
+rekognition                              | resource-groups                         
+resourcegroupstaggingapi                 | robomaker                               
+route53                                  | route53domains                          
+route53resolver                          | s3control                               
+sagemaker                                | sagemaker-a2i-runtime                   
+sagemaker-runtime                        | savingsplans                            
+schemas                                  | sdb                                     
+secretsmanager                           | securityhub                             
+serverlessrepo                           | service-quotas                          
+servicecatalog                           | servicediscovery                        
+ses                                      | sesv2                                   
+shield                                   | signer                                  
+sms                                      | sms-voice                               
+snowball                                 | sns                                     
+sqs                                      | ssm                                     
+sso                                      | sso-oidc                                
+stepfunctions                            | storagegateway                          
+sts                                      | support                                 
+swf                                      | textract                                
+transcribe                               | transfer                                
+translate                                | waf                                     
+waf-regional                             | wafv2                                   
+workdocs                                 | worklink                                
+workmail                                 | workmailmessageflow                     
+workspaces                               | xray                                    
+s3api                                    | s3                                      
+configure                                | deploy                                  
+configservice                            | opsworks-cm                             
+runtime.sagemaker                        | history                                 
+help                                    
+
+
+Invalid choice: 'confgiure', maybe you meant:
+
+  * configure
+[root@ip-172-31-4-177 ~]# aws congifure list
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: argument command: Invalid choice, valid choices are:
+
+accessanalyzer                           | acm                                     
+acm-pca                                  | alexaforbusiness                        
+amplify                                  | apigateway                              
+apigatewaymanagementapi                  | apigatewayv2                            
+appconfig                                | application-autoscaling                 
+application-insights                     | appmesh                                 
+appstream                                | appsync                                 
+athena                                   | autoscaling                             
+autoscaling-plans                        | backup                                  
+batch                                    | budgets                                 
+ce                                       | chime                                   
+cloud9                                   | clouddirectory                          
+cloudformation                           | cloudfront                              
+cloudhsm                                 | cloudhsmv2                              
+cloudsearch                              | cloudsearchdomain                       
+cloudtrail                               | cloudwatch                              
+codebuild                                | codecommit                              
+codeguru-reviewer                        | codeguruprofiler                        
+codepipeline                             | codestar                                
+codestar-notifications                   | cognito-identity                        
+cognito-idp                              | cognito-sync                            
+comprehend                               | comprehendmedical                       
+compute-optimizer                        | connect                                 
+connectparticipant                       | cur                                     
+dataexchange                             | datapipeline                            
+datasync                                 | dax                                     
+devicefarm                               | directconnect                           
+discovery                                | dlm                                     
+dms                                      | docdb                                   
+ds                                       | dynamodb                                
+dynamodbstreams                          | ebs                                     
+ec2                                      | ec2-instance-connect                    
+ecr                                      | ecs                                     
+efs                                      | eks                                     
+elastic-inference                        | elasticache                             
+elasticbeanstalk                         | elastictranscoder                       
+elb                                      | elbv2                                   
+emr                                      | es                                      
+events                                   | firehose                                
+fms                                      | forecast                                
+forecastquery                            | frauddetector                           
+fsx                                      | gamelift                                
+glacier                                  | globalaccelerator                       
+glue                                     | greengrass                              
+groundstation                            | guardduty                               
+health                                   | iam                                     
+imagebuilder                             | importexport                            
+inspector                                | iot                                     
+iot-data                                 | iot-jobs-data                           
+iot1click-devices                        | iot1click-projects                      
+iotanalytics                             | iotevents                               
+iotevents-data                           | iotsecuretunneling                      
+iotthingsgraph                           | kafka                                   
+kendra                                   | kinesis                                 
+kinesis-video-archived-media             | kinesis-video-media                     
+kinesis-video-signaling                  | kinesisanalytics                        
+kinesisanalyticsv2                       | kinesisvideo                            
+kms                                      | lakeformation                           
+lambda                                   | lex-models                              
+lex-runtime                              | license-manager                         
+lightsail                                | logs                                    
+machinelearning                          | macie                                   
+managedblockchain                        | marketplace-catalog                     
+marketplace-entitlement                  | marketplacecommerceanalytics            
+mediaconnect                             | mediaconvert                            
+medialive                                | mediapackage                            
+mediapackage-vod                         | mediastore                              
+mediastore-data                          | mediatailor                             
+meteringmarketplace                      | mgh                                     
+migrationhub-config                      | mobile                                  
+mq                                       | mturk                                   
+neptune                                  | networkmanager                          
+opsworks                                 | opsworkscm                              
+organizations                            | outposts                                
+personalize                              | personalize-events                      
+personalize-runtime                      | pi                                      
+pinpoint                                 | pinpoint-email                          
+pinpoint-sms-voice                       | polly                                   
+pricing                                  | qldb                                    
+qldb-session                             | quicksight                              
+ram                                      | rds                                     
+rds-data                                 | redshift                                
+rekognition                              | resource-groups                         
+resourcegroupstaggingapi                 | robomaker                               
+route53                                  | route53domains                          
+route53resolver                          | s3control                               
+sagemaker                                | sagemaker-a2i-runtime                   
+sagemaker-runtime                        | savingsplans                            
+schemas                                  | sdb                                     
+secretsmanager                           | securityhub                             
+serverlessrepo                           | service-quotas                          
+servicecatalog                           | servicediscovery                        
+ses                                      | sesv2                                   
+shield                                   | signer                                  
+sms                                      | sms-voice                               
+snowball                                 | sns                                     
+sqs                                      | ssm                                     
+sso                                      | sso-oidc                                
+stepfunctions                            | storagegateway                          
+sts                                      | support                                 
+swf                                      | textract                                
+transcribe                               | transfer                                
+translate                                | waf                                     
+waf-regional                             | wafv2                                   
+workdocs                                 | worklink                                
+workmail                                 | workmailmessageflow                     
+workspaces                               | xray                                    
+s3api                                    | s3                                      
+configure                                | deploy                                  
+configservice                            | opsworks-cm                             
+runtime.sagemaker                        | history                                 
+help                                    
+[root@ip-172-31-4-177 ~]# 
+[root@ip-172-31-4-177 ~]# aws configure list
+      Name                    Value             Type    Location
+      ----                    -----             ----    --------
+   profile                <not set>             None    None
+access_key     ****************PXUO shared-credentials-file    
+secret_key     ****************af53 shared-credentials-file    
+    region                us-west-2      config-file    ~/.aws/config
+[root@ip-172-31-4-177 ~]# cd 
+[root@ip-172-31-4-177 ~]# mkdir nginx
+[root@ip-172-31-4-177 ~]# cd nginx/
+[root@ip-172-31-4-177 nginx]# vi Dockerfile
+FROM nginx
+"Dockerfile" [New] 2L, 43C written
+[root@ip-172-31-4-177 nginx]# mkdir html
+[root@ip-172-31-4-177 nginx]# vi html/index.html
+<html>
+<head><title>Tin hoc that la don gian</title></head>
+"html/index.html" [New] 4L, 124C written
+[root@ip-172-31-4-177 nginx]# docker build -t tinhocthatladongian:v1 .
+Sending build context to Docker daemon  3.584kB
+Step 1/2 : FROM nginx
+latest: Pulling from library/nginx
+
+
+
+
+
+Digest: sha256:64a5064d6d62eda163b97648b60b15658d247efafc1980cafb3d760f1abf5249
+Status: Downloaded newer image for nginx:latest
+ ---> 8cf1bfb43ff5
+Step 2/2 : COPY html /usr/share/nginx/html
+ ---> 7d61aa75aa2a
+Successfully built 7d61aa75aa2a
+Successfully tagged tinhocthatladongian:v1
+[root@ip-172-31-4-177 nginx]# docker images
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+tinhocthatladongian   v1                  7d61aa75aa2a        5 seconds ago       132MB
+nginx                 latest              8cf1bfb43ff5        3 hours ago         132MB
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+{
+    "repository": {
+        "repositoryUri": "883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian", 
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        }, 
+        "registryId": "883985286148", 
+        "imageTagMutability": "MUTABLE", 
+        "repositoryArn": "arn:aws:ecr:eu-west-2:883985286148:repository/tinhocthatladongian", 
+        "repositoryName": "tinhocthatladongian", 
+        "createdAt": 1595398142.0
+    }
+}
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 2[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 /[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/t/tinhocthatladongian83985286148.dkr.ecr.eu-west-2.amazonaws.com/ti/tinhocthatladongia83985286148.dkr.ecr.eu-west-2.amazonaws.com/tin/tinhocthatladongi83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinh/tinhocthatladong83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinho/tinhocthatladon83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhoc/tinhocthatlado83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhoct/tinhocthatlad83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocth/tinhocthatla83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhoctha/tinhocthatl83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthat/tinhocthat83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatl/tinhoctha83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatla/tinhocth83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatlad/tinhoct83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatlado/tinhoc83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon/tinho83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladong/tinh83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongi/tin83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongia/ti83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/t83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/t
+inhocthatladongian
+[root@ip-172-31-4-177 nginx]# 883985286148.dkr.ecr.eu-west-2.amaz[root@ip-172-31-4-177 nginx]# d883985286148.dkr.ecr.eu-west-2.ama[root@ip-172-31-4-177 nginx]# do883985286148.dkr.ecr.eu-west-2.am[root@ip-172-31-4-177 nginx]# doc883985286148.dkr.ecr.eu-west-2.a[root@ip-172-31-4-177 nginx]# dock883985286148.dkr.ecr.eu-west-2.[root@ip-172-31-4-177 nginx]# docke883985286148.dkr.ecr.eu-west-2[root@ip-172-31-4-177 nginx]# docker883985286148.dkr.ecr.eu-west-[root@ip-172-31-4-177 nginx]# docker 883985286148.dkr.ecr.eu-west[root@ip-172-31-4-177 nginx]# docker p883985286148.dkr.ecr.eu-wes[root@ip-172-31-4-177 nginx]# docker pu883985286148.dkr.ecr.eu-we[root@ip-172-31-4-177 nginx]# docker pus883985286148.dkr.ecr.eu-w[root@ip-172-31-4-177 nginx]# docker push883985286148.dkr.ecr.eu-[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu
+-west-2.amazonaws.com/tinhocthatladongian
+The push refers to repository [883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian]
+An image does not exist locally with the tag: 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu[root@ip-172-31-4-177 nginx]# docker push  883985286148.dkr.ecr.e[root@ip-172-31-4-177 nginx]# docker push t 883985286148.dkr.ecr.[root@ip-172-31-4-177 nginx]# docker push ti 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker push tin 883985286148.dkr.ec[root@ip-172-31-4-177 nginx]# docker push tinh 883985286148.dkr.e[root@ip-172-31-4-177 nginx]# docker push tinho 883985286148.dkr.[root@ip-172-31-4-177 nginx]# docker push tinhoc 883985286148.dkr[root@ip-172-31-4-177 nginx]# docker push tinhoct 883985286148.dk[root@ip-172-31-4-177 nginx]# docker push tinhocth 883985286148.d[root@ip-172-31-4-177 nginx]# docker push tinhoctha 883985286148.[root@ip-172-31-4-177 nginx]# docker push tinhocthat 883985286148[root@ip-172-31-4-177 nginx]# docker push tinhocthatl 88398528614[root@ip-172-31-4-177 nginx]# docker push tinhocthatla 8839852861[root@ip-172-31-4-177 nginx]# docker push tinhocthatlat 883985286[root@ip-172-31-4-177 nginx]# docker push tinhocthatla 8839852861[root@ip-172-31-4-177 nginx]# docker push tinhocthatlad 883985286[root@ip-172-31-4-177 nginx]# docker push tinhocthatlado 88398528[root@ip-172-31-4-177 nginx]# docker push tinhocthatladon 8839852[root@ip-172-31-4-177 nginx]# docker push tinhocthatladong 883985[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongi 88398[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongia 8839[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongian 883[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongian: 88[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongian:v 8[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongian:v1 [root@ip-172-31-4-177 nginx]# docker push tinhocthatladongian:v1 
+883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+"docker push" requires exactly 1 argument.
+See 'docker push --help'.
+
+Usage:  docker push [OPTIONS] NAME[:TAG]
+
+Push an image or a repository to a registry
+[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongian:v1 [root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+The push refers to repository [883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian]
+An image does not exist locally with the tag: 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker images
+REPOSITORY                                                                             TAG                 IMAGE ID            CREATED             SIZE
+251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian                       latest              7d61aa75aa2a        8 minutes ago       132MB
+883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/tinhocthatladongian   latest              7d61aa75aa2a        8 minutes ago       132MB
+tinhocthatladongian                                                                    v1                  7d61aa75aa2a        8 minutes ago       132MB
+nginx                                                                                  latest              8cf1bfb43ff5        3 hours ago         132MB
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongian:v1 [root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/t83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/
+83985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 8[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+The push refers to repository [883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian]
+
+
+
+
+
+
+no basic auth credentials
+[root@ip-172-31-4-177 nginx]# aws ecr get-login --no-include-email --region eu-west-2
+docker login -u AWS -p eyJwYXlsb2FkIjoiMzJ1ak95VTNQY2ovbzFBTkFHLzdNdjF3NzFlRGJoMVhaZ0F5aHc3V2U5amM4MmVncDJWai9QM1dINkRYT044em5ldU0zeDNHWW9aclVUcW5nQitYUnJZMnZmdm5sQVhTU2Rma1ppaVJ4K05CaktIQnNaRldSMXNBYzl4d3dQZnRjb3ptNlFnVjBJVUtiNGpnMDVROGFMU01OYkhXNHhOdDZQKzBXV2s0VGZhYWgyaWhVb3BGU0hlUE5NTXhlL0ZnNGMvSzJKNmdvUHhXMFhveCt1eGV6d0FMYXZHNmYyMG5HWXFVdmZJY24vQ0dheVpPeXZ3d2Y2d1N1UVdsK2NsZS82c2ZsY0p3RThQczdkcEZhbHFqSldlU2NEaUg5QXdZbFVRZGkzS3hPWCszN1FRWmZ0MGNKalZZMVdZZXFuVGRQMG1oSFltVVlZTnc4OE1QeXdseDhDenpmZGYyMnVuTXZiS2NxQy9SMlp3WkdpS3hOTWJBVXEwb1RyNWMrSVJjR2NTbWdtMkRTb0pwSFZjeGhIdXFFR0M5ZlVKWnJaVkhHTzZJWmhSMW9hQlBVL1VhbjNITi82YzVXQ1NnaXFBTzBRanZsRG5CZGZ1c2FyQU9EN1RBV0owcjE4dFVrSTFwdEFETFgvUG0yMWhRSUlmc3ZNZTJhMkdRRm5OK1RvTHB0RzJLZ1NqS1dlaVE1TElqMjZmdGtLTGlMZ0ZIWGR6djRuQmprUUt3VFR0Q2dCbzlVaE01bnFpNjY2UHZ2SXRYRkF0ak9hT1V2U1R3WHZoNGlUTlU0bUxMOFcwdHBEa0U2ZU5JQ0UrUDl2VTR0NGdnaEFqK0xFaDhmUDNIYnhGSE9DeHpnWVpWc0ZLODhCbVd3bHY4a3ZQODNtVVZwUmtqVWQzY3hnTC9iNFZZdEFRQTB5RE5ZTFM1MDlxVVhmREtuNDBtWFhsVUdiWVVYOG9rbXVEMGJlZ1FWSHZTcW5XMFdEUTJrbFAzekp2VjJyejlZNjhnNHM5UEpaclBRd3dscHdMREl1OHFiNFkyMXQrVHQ4eWRrNnVEbDVvT2JOOWhEK2ZlQng3WUF1ajlodFNybWFLOFFuZ1p5Vks0MWY0VnJQc1BuTkZlSEI4NENoeWNyQ0tBVlRTSzlPd0hkS1ZTaWQ2R09pMTNDR053Y3NIR3MzYzBNWFVSTWV2bHB1TWFZS2pGWDZPNUo0cHM3djUzUzBmc3VqV1dtSFB0M2FSNUpVOHJ5SHoyWTZvU0FGRmFiVm1tTENMR2h4V0FCRlJWMXFzci90eHgzR0VTMXdLcnFYN3pSci9Pd2ZHKzN2VGFYa1JEYmpybmNpK1ZXNm1oME9BM2RnSWp6MWlaWUVtSkMvZGpxM2kzZERjbXlpSUxxTk1ZWkdZWGk1QnhqRTdxQW9RNkNlZUNXaTdvbDJkRUpWeTdtWFZzVDFIVHBvR2FpdXFRZEk2amtQalBxUDRyY2xsNEdaMStZQUVtR1J0a3ZQcFZoYTUzanhraVFuUlZ0SWcvU091eEhoL0NBeGtGNHpUeEkwTzc3SDRNK0Zmc2NzaWc5Wm1Od050c3dnPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREQ3V0hRL3h2Yjhab1UxcTFnSUJFSUE3b2o4L0lPa0hhZ1VSUmxLUlhSQ1AreVB3bjFld2lBOXp4eGJBRkRuMlp5dGlNcDhYY3paSi9LWE1sU09CSkxFbUpkTjBlaFJjdTltd2FDZz0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDE4NDB9 https://883985286148.dkr.ecr.eu-west-2.amazonaws.com
+[root@ip-172-31-4-177 nginx]# docker login -u AWS -p eyJwYXlsb2FkIjoiMzJ1ak95VTNQY2ovbzFBTkFHLzdNdjF3NzFlRGJoMVhaZ0F5aHc3V2U5amM4MmVncDJWai9QM1dINkRYT044em5ldU0zeDNHWW9aclVUcW5nQitYUnJZMnZmdm5sQVhTU2Rma1ppaVJ4K05CaktIQnNaRldSMXNBYzl4d3dQZnRjb3ptNlFnVjBJVUtiNGpnMDVROGFMU01OYkhXNHhOdDZQKzBXV2s0VGZhYWgyaWhVb3BGU0hlUE5NTXhlL0ZnNGMvSzJKNmdvUHhXMFhveCt1eGV6d0FMYXZHNmYyMG5HWXFVdmZJY24vQ0dheVpPeXZ3d2Y2d1N1UVdsK2NsZS82c2ZsY0p3RThQczdkcEZhbHFqSldlU2NEaUg5QXdZbFVRZGkzS3hPWCszN1FRWmZ0MGNKalZZMVdZZXFuVGRQMG1oSFltVVlZTnc4OE1QeXdseDhDenpmZGYyMnVuTXZiS2NxQy9SMlp3WkdpS3hOTWJBVXEwb1RyNWMrSVJjR2NTbWdtMkRTb0pwSFZjeGhIdXFFR0M5ZlVKWnJaVkhHTzZJWmhSMW9hQlBVL1VhbjNITi82YzVXQ1NnaXFBTzBRanZsRG5CZGZ1c2FyQU9EN1RBV0owcjE4dFVrSTFwdEFETFgvUG0yMWhRSUlmc3ZNZTJhMkdRRm5OK1RvTHB0RzJLZ1NqS1dlaVE1TElqMjZmdGtLTGlMZ0ZIWGR6djRuQmprUUt3VFR0Q2dCbzlVaE01bnFpNjY2UHZ2SXRYRkF0ak9hT1V2U1R3WHZoNGlUTlU0bUxMOFcwdHBEa0U2ZU5JQ0UrUDl2VTR0NGdnaEFqK0xFaDhmUDNIYnhGSE9DeHpnWVpWc0ZLODhCbVd3bHY4a3ZQODNtVVZwUmtqVWQzY3hnTC9iNFZZdEFRQTB5RE5ZTFM1MDlxVVhmREtuNDBtWFhsVUdiWVVYOG9rbXVEMGJlZ1FWSHZTcW5XMFdEUTJrbFAzekp2VjJyejlZNjhnNHM5UEpaclBRd3dscHdMREl1OHFiNFkyMXQrVHQ4eWRrNnVEbDVvT2JOOWhEK2ZlQng3WUF1ajlodFNybWFLOFFuZ1p5Vks0MWY0VnJQc1BuTkZlSEI4NENoeWNyQ0tBVlRTSzlPd0hkS1ZTaWQ2R09pMTNDR053Y3NIR3MzYzBNWFVSTWV2bHB1TWFZS2pGWDZPNUo0cHM3djUzUzBmc3VqV1dtSFB0M2FSNUpVOHJ5SHoyWTZvU0FGRmFiVm1tTENMR2h4V0FCRlJWMXFzci90eHgzR0VTMXdLcnFYN3pSci9Pd2ZHKzN2VGFYa1JEYmpybmNpK1ZXNm1oME9BM2RnSWp6MWlaWUVtSkMvZGpxM2kzZERjbXlpSUxxTk1ZWkdZWGk1QnhqRTdxQW9RNkNlZUNXaTdvbDJkRUpWeTdtWFZzVDFIVHBvR2FpdXFRZEk2amtQalBxUDRyY2xsNEdaMStZQUVtR1J0a3ZQcFZoYTUzanhraVFuUlZ0SWcvU091eEhoL0NBeGtGNHpUeEkwTzc3SDRNK0Zmc2NzaWc5Wm1Od050c3dnPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREQ3V0hRL3h2Yjhab1UxcTFnSUJFSUE3b2o4L0lPa0hhZ1VSUmxLUlhSQ1AreVB3bjFld2lBOXp4eGJBRkRuMlp5dGlNcDhYY3paSi9LWE1sU09CSkxFbUpkTjBlaFJjdTltd2FDZz0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDE4NDB9 https://883985286148.dkr.ecr.eu-west-2.amazonaws.com
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[root@ip-172-31-4-177 nginx]# docker login -u AWS -p eyJwYXlsb2FkIjoiMzJ1ak95VTNQY2ovbzFBTkFHLzdNdjF3NzFlRGJoMVhaZ0F5aHc3V2U5amM4MmVncDJWai9QM1dINkRYT044em5ldU0zeDNHWW9aclVUcW5nQitYUnJZMnZmdm5sQVhTU2Rma1ppaVJ4K05CaktIQnNaRldSMXNBYzl4d3dQZnRjb3ptNlFnVjBJVUtiNGpnMDVROGFMU01OYkhXNHhOdDZQKzBXV2s0VGZhYWgyaWhVb3BGU0hlUE5NTXhlL0ZnNGMvSzJKNmdvUHhXMFhveCt1eGV6d0FMYXZHNmYyMG5HWXFVdmZJY24vQ0dheVpPeXZ3d2Y2d1N1UVdsK2NsZS82c2ZsY0p3RThQczdkcEZhbHFqSldlU2NEaUg5QXdZbFVRZGkzS3hPWCszN1FRWmZ0MGNKalZZMVdZZXFuVGRQMG1oSFltVVlZTnc4OE1QeXdseDhDenpmZGYyMnVuTXZiS2NxQy9SMlp3WkdpS3hOTWJBVXEwb1RyNWMrSVJjR2NTbWdtMkRTb0pwSFZjeGhIdXFFR0M5ZlVKWnJaVkhHTzZJWmhSMW9hQlBVL1VhbjNITi82YzVXQ1NnaXFBTzBRanZsRG5CZGZ1c2FyQU9EN1RBV0owcjE4dFVrSTFwdEFETFgvUG0yMWhRSUlmc3ZNZTJhMkdRRm5OK1RvTHB0RzJLZ1NqS1dlaVE1TElqMjZmdGtLTGlMZ0ZIWGR6djRuQmprUUt3VFR0Q2dCbzlVaE01bnFpNjY2UHZ2SXRYRkF0ak9hT1V2U1R3WHZoNGlUTlU0bUxMOFcwdHBEa0U2ZU5JQ0UrUDl2VTR0NGdnaEFqK0xFaDhmUDNIYnhGSE9DeHpnWVpWc0ZLODhCbVd3bHY4a3ZQODNtVVZwUmtqVWQzY3hnTC9iNFZZdEFRQTB5RE5ZTFM1MDlxVVhmREtuNDBtWFhsVUdiWVVYOG9rbXVEMGJlZ1FWSHZTcW5XMFdEUTJrbFAzekp2VjJyejlZNjhnNHM5UEpaclBRd3dscHdMREl1OHFiNFkyMXQrVHQ4eWRrNnVEbDVvT2JOOWhEK2ZlQng3WUF1ajlodFNybWFLOFFuZ1p5Vks0MWY0VnJQc1BuTkZlSEI4NENoeWNyQ0tBVlRTSzlPd0hkS1ZTaWQ2R09pMTNDR053Y3NIR3MzYzBNWFVSTWV2bHB1TWFZS2pGWDZPNUo0cHM3djUzUzBmc3VqV1dtSFB0M2FSNUpVOHJ5SHoyWTZvU0FGRmFiVm1tTENMR2h4V0FCRlJWMXFzci90eHgzR0VTMXdLcnFYN3pSci9Pd2ZHKzN2VGFYa1JEYmpybmNpK1ZXNm1oME9BM2RnSWp6MWlaWUVtSkMvZGpxM2kzZERjbXlpSUxxTk1ZWkdZWGk1QnhqRTdxQW9RNkNlZUNXaTdvbDJkRUpWeTdtWFZzVDFIVHBvR2FpdXFRZEk2amtQalBxUDRyY2xsNEdaMStZQUVtR1J0a3ZQcFZoYTUzanhraVFuUlZ0SWcvU091eEhoL0NBeGtGNHpUeEkwTzc3SDRNK0Zmc2NzaWc5Wm1Od050c3dnPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREQ3V0hRL3h2Yjhab1UxcTFnSUJFSUE3b2o4L0lPa0hhZ1VSUmxLUlhSQ1AreVB3bjFld2lBOXp4eGJBRkRuMlp5dGlNcDhYY3paSi9LWE1sU09CSkxFbUpkTjBlaFJjdTltd2FDZz0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDE4NDB9 http[root@ip-172-31-4-177 nginx]# aws ecr get-login --no-include-email --region eu-west-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+.eu-west-2.amazonaws.com/tinhocthatladongian
+The push refers to repository [883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian]
+
+
+
+
+
+
+latest: digest: sha256:c38f1f0783993f571dc76e9982a44d259ecce9ed24d2db1db2693d3f7dd376ab size: 1569
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker login -u AWS -p eyJwYXlsb2FkIjoiMzJ1ak95VTNQY2ovbzFBTkFHLzdNdjF3NzFlRGJoMVhaZ0F5aHc3V2U5amM4MmVncDJWai9QM1dINkRYT044em5ldU0zeDNHWW9aclVUcW5nQitYUnJZMnZmdm5sQVhTU2Rma1ppaVJ4K05CaktIQnNaRldSMXNBYzl4d3dQZnRjb3ptNlFnVjBJVUtiNGpnMDVROGFMU01OYkhXNHhOdDZQKzBXV2s0VGZhYWgyaWhVb3BGU0hlUE5NTXhlL0ZnNGMvSzJKNmdvUHhXMFhveCt1eGV6d0FMYXZHNmYyMG5HWXFVdmZJY24vQ0dheVpPeXZ3d2Y2d1N1UVdsK2NsZS82c2ZsY0p3RThQczdkcEZhbHFqSldlU2NEaUg5QXdZbFVRZGkzS3hPWCszN1FRWmZ0MGNKalZZMVdZZXFuVGRQMG1oSFltVVlZTnc4OE1QeXdseDhDenpmZGYyMnVuTXZiS2NxQy9SMlp3WkdpS3hOTWJBVXEwb1RyNWMrSVJjR2NTbWdtMkRTb0pwSFZjeGhIdXFFR0M5ZlVKWnJaVkhHTzZJWmhSMW9hQlBVL1VhbjNITi82YzVXQ1NnaXFBTzBRanZsRG5CZGZ1c2FyQU9EN1RBV0owcjE4dFVrSTFwdEFETFgvUG0yMWhRSUlmc3ZNZTJhMkdRRm5OK1RvTHB0RzJLZ1NqS1dlaVE1TElqMjZmdGtLTGlMZ0ZIWGR6djRuQmprUUt3VFR0Q2dCbzlVaE01bnFpNjY2UHZ2SXRYRkF0ak9hT1V2U1R3WHZoNGlUTlU0bUxMOFcwdHBEa0U2ZU5JQ0UrUDl2VTR0NGdnaEFqK0xFaDhmUDNIYnhGSE9DeHpnWVpWc0ZLODhCbVd3bHY4a3ZQODNtVVZwUmtqVWQzY3hnTC9iNFZZdEFRQTB5RE5ZTFM1MDlxVVhmREtuNDBtWFhsVUdiWVVYOG9rbXVEMGJlZ1FWSHZTcW5XMFdEUTJrbFAzekp2VjJyejlZNjhnNHM5UEpaclBRd3dscHdMREl1OHFiNFkyMXQrVHQ4eWRrNnVEbDVvT2JOOWhEK2ZlQng3WUF1ajlodFNybWFLOFFuZ1p5Vks0MWY0VnJQc1BuTkZlSEI4NENoeWNyQ0tBVlRTSzlPd0hkS1ZTaWQ2R09pMTNDR053Y3NIR3MzYzBNWFVSTWV2bHB1TWFZS2pGWDZPNUo0cHM3djUzUzBmc3VqV1dtSFB0M2FSNUpVOHJ5SHoyWTZvU0FGRmFiVm1tTENMR2h4V0FCRlJWMXFzci90eHgzR0VTMXdLcnFYN3pSci9Pd2ZHKzN2VGFYa1JEYmpybmNpK1ZXNm1oME9BM2RnSWp6MWlaWUVtSkMvZGpxM2kzZERjbXlpSUxxTk1ZWkdZWGk1QnhqRTdxQW9RNkNlZUNXaTdvbDJkRUpWeTdtWFZzVDFIVHBvR2FpdXFRZEk2amtQalBxUDRyY2xsNEdaMStZQUVtR1J0a3ZQcFZoYTUzanhraVFuUlZ0SWcvU091eEhoL0NBeGtGNHpUeEkwTzc3SDRNK0Zmc2NzaWc5Wm1Od050c3dnPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREQ3V0hRL3h2Yjhab1UxcTFnSUJFSUE3b2o4L0lPa0hhZ1VSUmxLUlhSQ1AreVB3bjFld2lBOXp4eGJBRkRuMlp5dGlNcDhYY3paSi9LWE1sU09CSkxFbUpkTjBlaFJjdTltd2FDZz0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDE4NDB9 http[root@ip-172-31-4-177 nginx]# aws ecr get-login --no-include-email --region eu-west-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# docker images
+
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatlado[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/
+Error parsing reference: "883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/" is not a valid repository/tag: invalid reference format
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker login -u AWS -p eyJwYXlsb2FkIjoiMzJ1ak95VTNQY2ovbzFBTkFHLzdNdjF3NzFlRGJoMVhaZ0F5aHc3V2U5amM4MmVncDJWai9QM1dINkRYT044em5ldU0zeDNHWW9aclVUcW5nQitYUnJZMnZmdm5sQVhTU2Rma1ppaVJ4K05CaktIQnNaRldSMXNBYzl4d3dQZnRjb3ptNlFnVjBJVUtiNGpnMDVROGFMU01OYkhXNHhOdDZQKzBXV2s0VGZhYWgyaWhVb3BGU0hlUE5NTXhlL0ZnNGMvSzJKNmdvUHhXMFhveCt1eGV6d0FMYXZHNmYyMG5HWXFVdmZJY24vQ0dheVpPeXZ3d2Y2d1N1UVdsK2NsZS82c2ZsY0p3RThQczdkcEZhbHFqSldlU2NEaUg5QXdZbFVRZGkzS3hPWCszN1FRWmZ0MGNKalZZMVdZZXFuVGRQMG1oSFltVVlZTnc4OE1QeXdseDhDenpmZGYyMnVuTXZiS2NxQy9SMlp3WkdpS3hOTWJBVXEwb1RyNWMrSVJjR2NTbWdtMkRTb0pwSFZjeGhIdXFFR0M5ZlVKWnJaVkhHTzZJWmhSMW9hQlBVL1VhbjNITi82YzVXQ1NnaXFBTzBRanZsRG5CZGZ1c2FyQU9EN1RBV0owcjE4dFVrSTFwdEFETFgvUG0yMWhRSUlmc3ZNZTJhMkdRRm5OK1RvTHB0RzJLZ1NqS1dlaVE1TElqMjZmdGtLTGlMZ0ZIWGR6djRuQmprUUt3VFR0Q2dCbzlVaE01bnFpNjY2UHZ2SXRYRkF0ak9hT1V2U1R3WHZoNGlUTlU0bUxMOFcwdHBEa0U2ZU5JQ0UrUDl2VTR0NGdnaEFqK0xFaDhmUDNIYnhGSE9DeHpnWVpWc0ZLODhCbVd3bHY4a3ZQODNtVVZwUmtqVWQzY3hnTC9iNFZZdEFRQTB5RE5ZTFM1MDlxVVhmREtuNDBtWFhsVUdiWVVYOG9rbXVEMGJlZ1FWSHZTcW5XMFdEUTJrbFAzekp2VjJyejlZNjhnNHM5UEpaclBRd3dscHdMREl1OHFiNFkyMXQrVHQ4eWRrNnVEbDVvT2JOOWhEK2ZlQng3WUF1ajlodFNybWFLOFFuZ1p5Vks0MWY0VnJQc1BuTkZlSEI4NENoeWNyQ0tBVlRTSzlPd0hkS1ZTaWQ2R09pMTNDR053Y3NIR3MzYzBNWFVSTWV2bHB1TWFZS2pGWDZPNUo0cHM3djUzUzBmc3VqV1dtSFB0M2FSNUpVOHJ5SHoyWTZvU0FGRmFiVm1tTENMR2h4V0FCRlJWMXFzci90eHgzR0VTMXdLcnFYN3pSci9Pd2ZHKzN2VGFYa1JEYmpybmNpK1ZXNm1oME9BM2RnSWp6MWlaWUVtSkMvZGpxM2kzZERjbXlpSUxxTk1ZWkdZWGk1QnhqRTdxQW9RNkNlZUNXaTdvbDJkRUpWeTdtWFZzVDFIVHBvR2FpdXFRZEk2amtQalBxUDRyY2xsNEdaMStZQUVtR1J0a3ZQcFZoYTUzanhraVFuUlZ0SWcvU091eEhoL0NBeGtGNHpUeEkwTzc3SDRNK0Zmc2NzaWc5Wm1Od050c3dnPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREQ3V0hRL3h2Yjhab1UxcTFnSUJFSUE3b2o4L0lPa0hhZ1VSUmxLUlhSQ1AreVB3bjFld2lBOXp4eGJBRkRuMlp5dGlNcDhYY3paSi9LWE1sU09CSkxFbUpkTjBlaFJjdTltd2FDZz0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDE4NDB9 http[root@ip-172-31-4-177 nginx]# aws ecr get-login --no-include-email --region eu-west-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# docker images
+
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker push tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatlado[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon1 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+
+An error occurred (RepositoryAlreadyExistsException) when calling the CreateRepository operation: The repository with name 'tinhocthatladongian' already exists in the registry with id '883985286148'
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+.eu-west-2.amazonaws.com/tinhocthatladongian
+The push refers to repository [883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian]
+
+
+
+
+
+
+latest: digest: sha256:c38f1f0783993f571dc76e9982a44d259ecce9ed24d2db1db2693d3f7dd376ab size: 1569
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+sitory-name tinhocthatladongian --region eu-west-2
+
+An error occurred (RepositoryAlreadyExistsException) when calling the CreateRepository operation: The repository with name 'tinhocthatladongian' already exists in the registry with id '883985286148'
+[root@ip-172-31-4-177 nginx]# docker images
+REPOSITORY                                                                             TAG                 IMAGE ID            CREATED             SIZE
+251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian                       latest              7d61aa75aa2a        19 minutes ago      132MB
+883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/tinhocthatladongian   latest              7d61aa75aa2a        19 minutes ago      132MB
+883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian                       latest              7d61aa75aa2a        19 minutes ago      132MB
+tinhocthatladongian                                                                    v1                  7d61aa75aa2a        19 minutes ago      132MB
+nginx                                                                                  latest              8cf1bfb43ff5        3 hours ago         132MB
+[root@ip-172-31-4-177 nginx]# docker rm 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+Error: No such container: 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker rm 251123607109.dkr.ecr.e[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker rm 251123607109.dkr.ecr.e[root@ip-172-31-4-177 nginx]# docker rmi 251123607109.dkr.ecr.[root@ip-172-31-4-177 nginx]# docker rmi 251123607109.dkr.ecr.
+eu-west-2.amazonaws.com/tinhocthatladongian
+Untagged: 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian:latest
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/tinhocthatladongian
+Untagged: 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/tinhocthatladongian:latest
+[root@ip-172-31-4-177 nginx]# docker images
+REPOSITORY                                                         TAG                 IMAGE ID            CREATED             SIZE
+883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian   latest              7d61aa75aa2a        20 minutes ago      132MB
+tinhocthatladongian                                                v1                  7d61aa75aa2a        20 minutes ago      132MB
+nginx                                                              latest              8cf1bfb43ff5        3 hours ago         132MB
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/tinhocthatladongia[root@ip-172-31-4-177 nginx]# docker rmi 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker rm 251123607109.dkr.ecr.e[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker rm 251123607109.dkr.ecr.e[root@ip-172-31-4-177 nginx]# docker rmi 251123607109.dkr.ecr.[root@ip-172-31-4-177 nginx]# docker rm 251123607109.dkr.ecr.e[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+
+An error occurred (RepositoryAlreadyExistsException) when calling the CreateRepository operation: The repository with name 'tinhocthatladongian' already exists in the registry with id '883985286148'
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+Untagged: 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian:latest
+Untagged: 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian@sha256:c38f1f0783993f571dc76e9982a44d259ecce9ed24d2db1db2693d3f7dd376ab
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/tinhocthatladongia[root@ip-172-31-4-177 nginx]# docker rmi 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker rm 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian^C
+[root@ip-172-31-4-177 nginx]# docker images
+REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
+tinhocthatladongian   v1                  7d61aa75aa2a        23 minutes ago      132MB
+nginx                 latest              8cf1bfb43ff5        3 hours ago         132MB
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+
+An error occurred (RepositoryAlreadyExistsException) when calling the CreateRepository operation: The repository with name 'tinhocthatladongian' already exists in the registry with id '883985286148'
+[root@ip-172-31-4-177 nginx]# aws ecr get-login --no-include-email --region eu-west-2
+docker login -u AWS -p eyJwYXlsb2FkIjoiMnhxUWNhWjg4bEZNcmxvRUQ0Q1FXazdrbEt6RFVIWDRWaEszYVNzc1R6bEYwNlMyRXg5N1M0bnZSY3FOYkEzNTJWRW42TWI1dlFVVnc2bzJRQU9UcTNuSzhQbEc4L0dwaE1PY3Q0Z2tRSzRZakVTaFlZcU0vWFkzQk15YUFLOG9ZdEpSSk9ZZGVJb1k2UE14TDgwWVRNcVB2SGRWYW1UQTJ6c0JFajBxSEJVSXByRVNmNTRVRkFqb0RmeHZBclZPaWdqZnRmMHlSZmhrOHYvN0FvdG5yeWlTTUFVeDdIeXpZejhKT2pldWFuSFowNDJTSkJUWEY0U05kMUJ3WjMveTFRMUlIYmZpMU1pdU1LSVMzbTVYUFN2ZjVrditKeXRiMVhrNTFOQUpSb3ZQc3pwRXZSMnpaZlZ3MHgrS2JvVzhaM1p3SkNPSnNjWUdSRURUSVYxY0xVbUNwUWRBdStGenpzVEZjT3RyZ0QxRmdKZHVDbTY4cFI1N0VvU2E3U0pVeTg2anpReGJNSUxsdGJSZGNsa2t1a1F5ZEhzQnZRMjdHN3dNUm9XY3ZCTXg3THJwdzNpSUtyczU5M3ZocmMzcWZac0dYaDN4d2xyYUpDNHhHdzRzQnd5akE2TkxzNS84M2l5QXBWU2xJdVZqYWsxZVBTZ3BHclExRGhRQ1lvZTJwdTk1TFJjaVhPNnVyV2JkTjZXeEN0ak1qbE5EYWdJNEd5aDhCbVNHQ254SVd2aGs1aVlPVFppa01wZU9uaTB5VnM3ODVNSVA4eTQzS3VxdHJlRVhEUEdaQzVOWFU0SkFaaFZ4dXJZWG5wbWZvU1VCMVlOaHVlR1BTRS9HN0hiVGpzNUFXYXlZYkpFd1lHS1JzSDBSay9ENlN1V0dpYzhMVHkrNnNQeTBGT04yUm1lNjlkZ3RjL2hqVmhHWUQrQ0VTNHd2TkZEY281K2JwZnk1VmFkL2p2ZDE5MWtCOEgyaDF6WFpXVjhzNG50dFlOcWRsSFRjejJFb1RoTmtTTitqOThQVW1sN0lFOGJkYWVTZVNpTWhIK3luUVRncXZkMERZU2RRL0h6bnVFemlURWZ5ajVjeU1TT201MHljdUZjVXdRQ2hkV2lxVEhYd1c2Q3VEVzhKTkZrV0F0MVFJL2NQalVQc3lyeWNPUk85WEZwOTVJNUQ4Um1Mb0t3SFA0bnI5b3EyL2ZDWUMyTHpJaUNrSGtMQUM1K3BZMUQyTDFFY1Y0bGo3aldBM1phNUM2ZHUvZHV4MnJjanhmUk9SRkJJb1FqNXZLSWtzMys3ZEs2WG0rVEFlVmIzK3U2WWozRmxDaHdXVDJrdzdoYUhoYjJrQTRTLzZWMlZQNlc0ZDhpT251Wml4dlRwc1liUnRnendPd1p6cDZ4b3Z4cHVDODRBQUlNVTZTMWdmenpNQ3p5bnNPV0JyOVBnV2lRbTEzbERwK0h1Y2xSc3h6eXVxMThzY1RBWnZBdnhBTG9HZFF3YmI0Y21Sb2NGNWdvNWNNZy9VOU1CbUJiQlhMUE84U2syZldLd2xHMEg3SzMyVEM3RWR3ZSszVlNFdnJCbkhRPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREtUVzN5MnBsN29qZEROR3VRSUJFSUE3VHZUQ3NBbklJTldJVDBLdzYrVE9Lb0o1eGtJRDVtQWQ5U08yQUNKVnFFaFVJcmd3OFY3aUYvMWpkanZ2bW1QcUR4UkNWcVRFaHpVTi9DUT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDI3NDd9 https://883985286148.dkr.ecr.eu-west-2.amazonaws.com
+[root@ip-172-31-4-177 nginx]# docker login -u AWS -p eyJwYXlsb2FkIjoiMnhxUWNhWjg4bEZNcmxvRUQ0Q1FXazdrbEt6RFVIWDRWaEszYVNzc1R6bEYwNlMyRXg5N1M0bnZSY3FOYkEzNTJWRW42TWI1dlFVVnc2bzJRQU9UcTNuSzhQbEc4L0dwaE1PY3Q0Z2tRSzRZakVTaFlZcU0vWFkzQk15YUFLOG9ZdEpSSk9ZZGVJb1k2UE14TDgwWVRNcVB2SGRWYW1UQTJ6c0JFajBxSEJVSXByRVNmNTRVRkFqb0RmeHZBclZPaWdqZnRmMHlSZmhrOHYvN0FvdG5yeWlTTUFVeDdIeXpZejhKT2pldWFuSFowNDJTSkJUWEY0U05kMUJ3WjMveTFRMUlIYmZpMU1pdU1LSVMzbTVYUFN2ZjVrditKeXRiMVhrNTFOQUpSb3ZQc3pwRXZSMnpaZlZ3MHgrS2JvVzhaM1p3SkNPSnNjWUdSRURUSVYxY0xVbUNwUWRBdStGenpzVEZjT3RyZ0QxRmdKZHVDbTY4cFI1N0VvU2E3U0pVeTg2anpReGJNSUxsdGJSZGNsa2t1a1F5ZEhzQnZRMjdHN3dNUm9XY3ZCTXg3THJwdzNpSUtyczU5M3ZocmMzcWZac0dYaDN4d2xyYUpDNHhHdzRzQnd5akE2TkxzNS84M2l5QXBWU2xJdVZqYWsxZVBTZ3BHclExRGhRQ1lvZTJwdTk1TFJjaVhPNnVyV2JkTjZXeEN0ak1qbE5EYWdJNEd5aDhCbVNHQ254SVd2aGs1aVlPVFppa01wZU9uaTB5VnM3ODVNSVA4eTQzS3VxdHJlRVhEUEdaQzVOWFU0SkFaaFZ4dXJZWG5wbWZvU1VCMVlOaHVlR1BTRS9HN0hiVGpzNUFXYXlZYkpFd1lHS1JzSDBSay9ENlN1V0dpYzhMVHkrNnNQeTBGT04yUm1lNjlkZ3RjL2hqVmhHWUQrQ0VTNHd2TkZEY281K2JwZnk1VmFkL2p2ZDE5MWtCOEgyaDF6WFpXVjhzNG50dFlOcWRsSFRjejJFb1RoTmtTTitqOThQVW1sN0lFOGJkYWVTZVNpTWhIK3luUVRncXZkMERZU2RRL0h6bnVFemlURWZ5ajVjeU1TT201MHljdUZjVXdRQ2hkV2lxVEhYd1c2Q3VEVzhKTkZrV0F0MVFJL2NQalVQc3lyeWNPUk85WEZwOTVJNUQ4Um1Mb0t3SFA0bnI5b3EyL2ZDWUMyTHpJaUNrSGtMQUM1K3BZMUQyTDFFY1Y0bGo3aldBM1phNUM2ZHUvZHV4MnJjanhmUk9SRkJJb1FqNXZLSWtzMys3ZEs2WG0rVEFlVmIzK3U2WWozRmxDaHdXVDJrdzdoYUhoYjJrQTRTLzZWMlZQNlc0ZDhpT251Wml4dlRwc1liUnRnendPd1p6cDZ4b3Z4cHVDODRBQUlNVTZTMWdmenpNQ3p5bnNPV0JyOVBnV2lRbTEzbERwK0h1Y2xSc3h6eXVxMThzY1RBWnZBdnhBTG9HZFF3YmI0Y21Sb2NGNWdvNWNNZy9VOU1CbUJiQlhMUE84U2syZldLd2xHMEg3SzMyVEM3RWR3ZSszVlNFdnJCbkhRPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREtUVzN5MnBsN29qZEROR3VRSUJFSUE3VHZUQ3NBbklJTldJVDBLdzYrVE9Lb0o1eGtJRDVtQWQ5U08yQUNKVnFFaFVJcmd3OFY3aUYvMWpkanZ2bW1QcUR4UkNWcVRFaHpVTi9DUT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDI3NDd9 https://883985286148.dkr.ecr.eu-west-2.amazonaws.com
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+
+An error occurred (RepositoryAlreadyExistsException) when calling the CreateRepository operation: The repository with name 'tinhocthatladongian' already exists in the registry with id '883985286148'
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker login -u AWS -p eyJwYXlsb2FkIjoiMnhxUWNhWjg4bEZNcmxvRUQ0Q1FXazdrbEt6RFVIWDRWaEszYVNzc1R6bEYwNlMyRXg5N1M0bnZSY3FOYkEzNTJWRW42TWI1dlFVVnc2bzJRQU9UcTNuSzhQbEc4L0dwaE1PY3Q0Z2tRSzRZakVTaFlZcU0vWFkzQk15YUFLOG9ZdEpSSk9ZZGVJb1k2UE14TDgwWVRNcVB2SGRWYW1UQTJ6c0JFajBxSEJVSXByRVNmNTRVRkFqb0RmeHZBclZPaWdqZnRmMHlSZmhrOHYvN0FvdG5yeWlTTUFVeDdIeXpZejhKT2pldWFuSFowNDJTSkJUWEY0U05kMUJ3WjMveTFRMUlIYmZpMU1pdU1LSVMzbTVYUFN2ZjVrditKeXRiMVhrNTFOQUpSb3ZQc3pwRXZSMnpaZlZ3MHgrS2JvVzhaM1p3SkNPSnNjWUdSRURUSVYxY0xVbUNwUWRBdStGenpzVEZjT3RyZ0QxRmdKZHVDbTY4cFI1N0VvU2E3U0pVeTg2anpReGJNSUxsdGJSZGNsa2t1a1F5ZEhzQnZRMjdHN3dNUm9XY3ZCTXg3THJwdzNpSUtyczU5M3ZocmMzcWZac0dYaDN4d2xyYUpDNHhHdzRzQnd5akE2TkxzNS84M2l5QXBWU2xJdVZqYWsxZVBTZ3BHclExRGhRQ1lvZTJwdTk1TFJjaVhPNnVyV2JkTjZXeEN0ak1qbE5EYWdJNEd5aDhCbVNHQ254SVd2aGs1aVlPVFppa01wZU9uaTB5VnM3ODVNSVA4eTQzS3VxdHJlRVhEUEdaQzVOWFU0SkFaaFZ4dXJZWG5wbWZvU1VCMVlOaHVlR1BTRS9HN0hiVGpzNUFXYXlZYkpFd1lHS1JzSDBSay9ENlN1V0dpYzhMVHkrNnNQeTBGT04yUm1lNjlkZ3RjL2hqVmhHWUQrQ0VTNHd2TkZEY281K2JwZnk1VmFkL2p2ZDE5MWtCOEgyaDF6WFpXVjhzNG50dFlOcWRsSFRjejJFb1RoTmtTTitqOThQVW1sN0lFOGJkYWVTZVNpTWhIK3luUVRncXZkMERZU2RRL0h6bnVFemlURWZ5ajVjeU1TT201MHljdUZjVXdRQ2hkV2lxVEhYd1c2Q3VEVzhKTkZrV0F0MVFJL2NQalVQc3lyeWNPUk85WEZwOTVJNUQ4Um1Mb0t3SFA0bnI5b3EyL2ZDWUMyTHpJaUNrSGtMQUM1K3BZMUQyTDFFY1Y0bGo3aldBM1phNUM2ZHUvZHV4MnJjanhmUk9SRkJJb1FqNXZLSWtzMys3ZEs2WG0rVEFlVmIzK3U2WWozRmxDaHdXVDJrdzdoYUhoYjJrQTRTLzZWMlZQNlc0ZDhpT251Wml4dlRwc1liUnRnendPd1p6cDZ4b3Z4cHVDODRBQUlNVTZTMWdmenpNQ3p5bnNPV0JyOVBnV2lRbTEzbERwK0h1Y2xSc3h6eXVxMThzY1RBWnZBdnhBTG9HZFF3YmI0Y21Sb2NGNWdvNWNNZy9VOU1CbUJiQlhMUE84U2syZldLd2xHMEg3SzMyVEM3RWR3ZSszVlNFdnJCbkhRPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREtUVzN5MnBsN29qZEROR3VRSUJFSUE3VHZUQ3NBbklJTldJVDBLdzYrVE9Lb0o1eGtJRDVtQWQ5U08yQUNKVnFFaFVJcmd3OFY3aUYvMWpkanZ2bW1QcUR4UkNWcVRFaHpVTi9DUT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDI3NDd9 http[root@ip-172-31-4-177 nginx]# aws ecr get-login --no-include-email --region eu-west-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/tinhocthatladongia[root@ip-172-31-4-177 nginx]# docker rmi 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker rm 251123607109.dkr.ecr.e[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:v1 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladon[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+[root@ip-172-31-4-177 nginx]# docker login -u AWS -p eyJwYXlsb2FkIjoiMnhxUWNhWjg4bEZNcmxvRUQ0Q1FXazdrbEt6RFVIWDRWaEszYVNzc1R6bEYwNlMyRXg5N1M0bnZSY3FOYkEzNTJWRW42TWI1dlFVVnc2bzJRQU9UcTNuSzhQbEc4L0dwaE1PY3Q0Z2tRSzRZakVTaFlZcU0vWFkzQk15YUFLOG9ZdEpSSk9ZZGVJb1k2UE14TDgwWVRNcVB2SGRWYW1UQTJ6c0JFajBxSEJVSXByRVNmNTRVRkFqb0RmeHZBclZPaWdqZnRmMHlSZmhrOHYvN0FvdG5yeWlTTUFVeDdIeXpZejhKT2pldWFuSFowNDJTSkJUWEY0U05kMUJ3WjMveTFRMUlIYmZpMU1pdU1LSVMzbTVYUFN2ZjVrditKeXRiMVhrNTFOQUpSb3ZQc3pwRXZSMnpaZlZ3MHgrS2JvVzhaM1p3SkNPSnNjWUdSRURUSVYxY0xVbUNwUWRBdStGenpzVEZjT3RyZ0QxRmdKZHVDbTY4cFI1N0VvU2E3U0pVeTg2anpReGJNSUxsdGJSZGNsa2t1a1F5ZEhzQnZRMjdHN3dNUm9XY3ZCTXg3THJwdzNpSUtyczU5M3ZocmMzcWZac0dYaDN4d2xyYUpDNHhHdzRzQnd5akE2TkxzNS84M2l5QXBWU2xJdVZqYWsxZVBTZ3BHclExRGhRQ1lvZTJwdTk1TFJjaVhPNnVyV2JkTjZXeEN0ak1qbE5EYWdJNEd5aDhCbVNHQ254SVd2aGs1aVlPVFppa01wZU9uaTB5VnM3ODVNSVA4eTQzS3VxdHJlRVhEUEdaQzVOWFU0SkFaaFZ4dXJZWG5wbWZvU1VCMVlOaHVlR1BTRS9HN0hiVGpzNUFXYXlZYkpFd1lHS1JzSDBSay9ENlN1V0dpYzhMVHkrNnNQeTBGT04yUm1lNjlkZ3RjL2hqVmhHWUQrQ0VTNHd2TkZEY281K2JwZnk1VmFkL2p2ZDE5MWtCOEgyaDF6WFpXVjhzNG50dFlOcWRsSFRjejJFb1RoTmtTTitqOThQVW1sN0lFOGJkYWVTZVNpTWhIK3luUVRncXZkMERZU2RRL0h6bnVFemlURWZ5ajVjeU1TT201MHljdUZjVXdRQ2hkV2lxVEhYd1c2Q3VEVzhKTkZrV0F0MVFJL2NQalVQc3lyeWNPUk85WEZwOTVJNUQ4Um1Mb0t3SFA0bnI5b3EyL2ZDWUMyTHpJaUNrSGtMQUM1K3BZMUQyTDFFY1Y0bGo3aldBM1phNUM2ZHUvZHV4MnJjanhmUk9SRkJJb1FqNXZLSWtzMys3ZEs2WG0rVEFlVmIzK3U2WWozRmxDaHdXVDJrdzdoYUhoYjJrQTRTLzZWMlZQNlc0ZDhpT251Wml4dlRwc1liUnRnendPd1p6cDZ4b3Z4cHVDODRBQUlNVTZTMWdmenpNQ3p5bnNPV0JyOVBnV2lRbTEzbERwK0h1Y2xSc3h6eXVxMThzY1RBWnZBdnhBTG9HZFF3YmI0Y21Sb2NGNWdvNWNNZy9VOU1CbUJiQlhMUE84U2syZldLd2xHMEg3SzMyVEM3RWR3ZSszVlNFdnJCbkhRPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREtUVzN5MnBsN29qZEROR3VRSUJFSUE3VHZUQ3NBbklJTldJVDBLdzYrVE9Lb0o1eGtJRDVtQWQ5U08yQUNKVnFFaFVJcmd3OFY3aUYvMWpkanZ2bW1QcUR4UkNWcVRFaHpVTi9DUT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDI3NDd9 http[root@ip-172-31-4-177 nginx]# aws ecr get-login --no-include-email --region eu-west-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian/tinhocthatladongia[root@ip-172-31-4-177 nginx]# docker rmi 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+[root@ip-172-31-4-177 nginx]# docker rm 251123607109.dkr.ecr.e[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# aws ecr create-repository --repo[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+The push refers to repository [883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian]
+
+
+
+
+
+
+latest: digest: sha256:c38f1f0783993f571dc76e9982a44d259ecce9ed24d2db1db2693d3f7dd376ab size: 1569
+[root@ip-172-31-4-177 nginx]# docker images
+REPOSITORY                                                         TAG                 IMAGE ID            CREATED             SIZE
+883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian   latest              7d61aa75aa2a        30 minutes ago      132MB
+tinhocthatladongian                                                v1                  7d61aa75aa2a        30 minutes ago      132MB
+nginx                                                              latest              8cf1bfb43ff5        3 hours ago         132MB
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+The push refers to repository [883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian]
+
+
+
+
+
+
+latest: digest: sha256:c38f1f0783993f571dc76e9982a44d259ecce9ed24d2db1db2693d3f7dd376ab size: 1569
+[root@ip-172-31-4-177 nginx]# docker rmi tinhocthatladongian:v1
+Untagged: tinhocthatladongian:v1
+[root@ip-172-31-4-177 nginx]# docker rmi 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian 
+Untagged: 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian:latest
+Untagged: 883985286148.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian@sha256:c38f1f0783993f571dc76e9982a44d259ecce9ed24d2db1db2693d3f7dd376ab
+Deleted: sha256:7d61aa75aa2a6294529067d97a3d1665e1de4b9bcb985d5c28566b3c0814b66d
+Deleted: sha256:d6c7d1f5e134c849a9a41e79fa4a241b043f9687a5e45429e473d8ff614f7d4c
+[root@ip-172-31-4-177 nginx]# docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+nginx               latest              8cf1bfb43ff5        3 hours ago         132MB
+[root@ip-172-31-4-177 nginx]# docker build -t tinhocthatladongian .
+Sending build context to Docker daemon  3.584kB
+Step 1/2 : FROM nginx
+ ---> 8cf1bfb43ff5
+Step 2/2 : COPY html /usr/share/nginx/html
+ ---> 2b6f3ed1cfaa
+Successfully built 2b6f3ed1cfaa
+Successfully tagged tinhocthatladongian:latest
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:latest 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian:latest
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian:latest
+The push refers to repository [883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian]
+
+
+
+
+
+
+no basic auth credentials
+[root@ip-172-31-4-177 nginx]# aws ecr get-login --no-include-email --region eu-west-2
+docker login -u AWS -p eyJwYXlsb2FkIjoidkpaSzBQOXBWTWpNSlN3bXR6bGl1Zy9FOUVpUmpTcFlkRUVaZS9uMnpCbG5YOEtzZDV2bmhmbkxNNFpQSisxTXozbG12aW5nZW5LZTR1UE1aRDliSis0MnBZQ3hqZmxsWmljMHh3cWVXejBrZUd0d1BUMTdVODE3MjhvNVNhRnR3K0pOSmdXZUd3MytjS0tTNDJOR3VvdXVhaXFKNjhwRWc4aGNCUlZDT0h0Mm0yUWlCWm9RellVTnZYbkN0Wk9sc01qS0ZhVkJjbjU1YmJpTXVLMnk1NFhQbWlSTWNNMllkOG5kZHlxRFZtL1F2QzNISGZRdmN1SGtGVjM1bk9qSGVtSFl3MVJIWnFER3lvL1hSOGV0eUYrWGx0QWVLelY4YnVSVko4UDVRRDZOdmRCWE1tRHdXRnV3dkVVYXVLRlU1VGJOZ01aU2JvODkzdlpUMFU3c3R4ZFplNng1NCtjZld1YUJkVEFMQU1DZE1GRzdEeDhKMzM5TUJKcmpBNUY3TVNHWnYvSDVwT1luaXBSRU9lYWNrN0pScUY5dTdiakQyYWdNZ2VyNVljMU4zMDJ5NmJHYlRsVFlTbVNvem5vdnpXSTl6RjZuNFowdENnbGsrU1FIbHg1VlVoSmdlcjVwM293SzVoOUk3QUxnRUZybXlCaFJYa1BwMEJBVVFzV0gyOGFhQ2lwb2hUYTBLYTlDcEhPZEpPcGEwb0JOM3dkbDU4SjkyMDBKV0p1eTA2TDM3SVk0dnkyZFduMkYvbzNsMk0zR3VkVmtTRFUvOFRCUXFkYVdERkh1YTNNSFhFWERsdzdQS25ZblRiajZoQjZFaDkrRlRBcUdwNzR2SDFQQ0RRQXc0Zm1ScEtFWmJxaTFKdlVCanpBL2t1K2JtNDBoVm1xcVFRdC9VdEkyWHlXOXFzWENpeDk5WVJqN2JwLzF3SDd2MFRFUWJHZTUrejlDNHVrWUx0SVNUMDFVSzF3bUVYRnlhTmFIRXFIejFHVk9jUTU1R0JZMUtBYS9wRFl6cEN1TUplK2Yrb1ROQ1IzSHJjRUVYWm9WQ1U5UXlxcTRSZWVaSHZVbGx5bVdheFovY3h2ZVZsb2RvU0tuOVV6RC9YSzh4S2F1Ty95ZmRUU09zVU5HU2dlVFc5VEFRWWNLaUorb2hDSmtOaEFGVG9ZYWpSVGJKUlgzc1REYkRON2l6bzdWbzgxWWd3dkFWNCt4a1JicXdYRmo2VUc1MzRLbzFtbzNVUkpUOTRqNmVzM0dCVSthVklHdnBScjRYZWg4TGVEMjI0NXJGS0k2c04wTnZxQWpTK2loRG9qU01wRWdJQ2tBbzIzaUhNZXY5YVpFQXVQcWtHLzNlMGVGamcwQWtSTElsbTN5VmVNY1J0L1VwWENzbkxvaUIyZWFBWC9OSTM4b2k1ZUpPZVR2ZCt4WEU0ZFkrdFVKQnViRVlsaG5iZmNTSG8wanFpd0xOVzVDOExEMWp4Q1psYjF2VVBPMW05cmErbWxML2dxOFJDL2pzeFJWdk9EYzFDaTZmUGpDSDl3Y1FEQk02eFc4cFJGQ1Mwcy9lNlRuemtoa2lnPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREh5dFVVemJBZEZZZGhORFZRSUJFSUE3WGZhaEpkYS9oYmVxTk9EUUlpNGs1RGV2ZUUxRGNmZG1JemtJZkU3d09iaU81VWpWQkhKQ2pvUGRqdlVlQ2d2djg0NUl6YmFoSFdDQ0plWT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDMyNTF9 https://883985286148.dkr.ecr.eu-west-2.amazonaws.com
+[root@ip-172-31-4-177 nginx]# docker login -u AWS -p eyJwYXlsb2FkIjoidkpaSzBQOXBWTWpNSlN3bXR6bGl1Zy9FOUVpUmpTcFlkRUVaZS9uMnpCbG5YOEtzZDV2bmhmbkxNNFpQSisxTXozbG12aW5nZW5LZTR1UE1aRDliSis0MnBZQ3hqZmxsWmljMHh3cWVXejBrZUd0d1BUMTdVODE3MjhvNVNhRnR3K0pOSmdXZUd3MytjS0tTNDJOR3VvdXVhaXFKNjhwRWc4aGNCUlZDT0h0Mm0yUWlCWm9RellVTnZYbkN0Wk9sc01qS0ZhVkJjbjU1YmJpTXVLMnk1NFhQbWlSTWNNMllkOG5kZHlxRFZtL1F2QzNISGZRdmN1SGtGVjM1bk9qSGVtSFl3MVJIWnFER3lvL1hSOGV0eUYrWGx0QWVLelY4YnVSVko4UDVRRDZOdmRCWE1tRHdXRnV3dkVVYXVLRlU1VGJOZ01aU2JvODkzdlpUMFU3c3R4ZFplNng1NCtjZld1YUJkVEFMQU1DZE1GRzdEeDhKMzM5TUJKcmpBNUY3TVNHWnYvSDVwT1luaXBSRU9lYWNrN0pScUY5dTdiakQyYWdNZ2VyNVljMU4zMDJ5NmJHYlRsVFlTbVNvem5vdnpXSTl6RjZuNFowdENnbGsrU1FIbHg1VlVoSmdlcjVwM293SzVoOUk3QUxnRUZybXlCaFJYa1BwMEJBVVFzV0gyOGFhQ2lwb2hUYTBLYTlDcEhPZEpPcGEwb0JOM3dkbDU4SjkyMDBKV0p1eTA2TDM3SVk0dnkyZFduMkYvbzNsMk0zR3VkVmtTRFUvOFRCUXFkYVdERkh1YTNNSFhFWERsdzdQS25ZblRiajZoQjZFaDkrRlRBcUdwNzR2SDFQQ0RRQXc0Zm1ScEtFWmJxaTFKdlVCanpBL2t1K2JtNDBoVm1xcVFRdC9VdEkyWHlXOXFzWENpeDk5WVJqN2JwLzF3SDd2MFRFUWJHZTUrejlDNHVrWUx0SVNUMDFVSzF3bUVYRnlhTmFIRXFIejFHVk9jUTU1R0JZMUtBYS9wRFl6cEN1TUplK2Yrb1ROQ1IzSHJjRUVYWm9WQ1U5UXlxcTRSZWVaSHZVbGx5bVdheFovY3h2ZVZsb2RvU0tuOVV6RC9YSzh4S2F1Ty95ZmRUU09zVU5HU2dlVFc5VEFRWWNLaUorb2hDSmtOaEFGVG9ZYWpSVGJKUlgzc1REYkRON2l6bzdWbzgxWWd3dkFWNCt4a1JicXdYRmo2VUc1MzRLbzFtbzNVUkpUOTRqNmVzM0dCVSthVklHdnBScjRYZWg4TGVEMjI0NXJGS0k2c04wTnZxQWpTK2loRG9qU01wRWdJQ2tBbzIzaUhNZXY5YVpFQXVQcWtHLzNlMGVGamcwQWtSTElsbTN5VmVNY1J0L1VwWENzbkxvaUIyZWFBWC9OSTM4b2k1ZUpPZVR2ZCt4WEU0ZFkrdFVKQnViRVlsaG5iZmNTSG8wanFpd0xOVzVDOExEMWp4Q1psYjF2VVBPMW05cmErbWxML2dxOFJDL2pzeFJWdk9EYzFDaTZmUGpDSDl3Y1FEQk02eFc4cFJGQ1Mwcy9lNlRuemtoa2lnPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFREh5dFVVemJBZEZZZGhORFZRSUJFSUE3WGZhaEpkYS9oYmVxTk9EUUlpNGs1RGV2ZUUxRGNmZG1JemtJZkU3d09iaU81VWpWQkhKQ2pvUGRqdlVlQ2d2djg0NUl6YmFoSFdDQ0plWT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDMyNTF9 https://883985286148.dkr.ecr.eu-west-2.amazonaws.com
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian:latest
+The push refers to repository [883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian]
+
+
+
+
+
+
+no basic auth credentials
+[root@ip-172-31-4-177 nginx]# docker images
+REPOSITORY                                                         TAG                 IMAGE ID            CREATED             SIZE
+883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian   latest              2b6f3ed1cfaa        2 minutes ago       132MB
+tinhocthatladongian                                                latest              2b6f3ed1cfaa        2 minutes ago       132MB
+nginx                                                              latest              8cf1bfb43ff5        3 hours ago         132MB
+[root@ip-172-31-4-177 nginx]# docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi -f $(docker images -a -q)"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containers
+[root@ip-172-31-4-177 nginx]# docker rm $(docker ps -a -q)
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]
+
+Remove one or more containers
+[root@ip-172-31-4-177 nginx]# docker rmi -f $(docker images -a -q)
+Untagged: 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian:latest
+Untagged: tinhocthatladongian:latest
+Deleted: sha256:2b6f3ed1cfaae133919f759544847b0efcca7ebd513f7e509d4f64e19bb5e529
+Deleted: sha256:c2a12eb91701ee76e4161b0d5b8258743a750d7666b0e3bdff50077de8c41d9c
+Untagged: nginx:latest
+Untagged: nginx@sha256:64a5064d6d62eda163b97648b60b15658d247efafc1980cafb3d760f1abf5249
+Deleted: sha256:8cf1bfb43ff5d9b05af9b6b63983440f137c6a08320fa7592197c1474ef30241
+Deleted: sha256:f693fa68e7be60da5f2631f94268bb7231278a9e0a10e25798173ce6dd2e4d9d
+Deleted: sha256:ed095e8a33da1985dfdb0b098c2e7ffb035f98f2ff98c648bdf67d4b880a7b3d
+Deleted: sha256:3a069d285e939b95a82cecf0e6ac9b3ac3c21397f9d1c97276f98551cfa02b3d
+Deleted: sha256:18cb14912446a24695198924710f359397929d94acd7d86c8bb0b3dbaa9b672f
+Deleted: sha256:95ef25a3204339de1edf47feaa00f60b5ac157a498964790c58c921494ce7ffd
+Error: No such image: 2b6f3ed1cfaa
+[root@ip-172-31-4-177 nginx]# aws ecr get-login --no-include-email --region eu-west-2
+docker login -u AWS -p eyJwYXlsb2FkIjoib3o1RXdYY3NvbDExMyt0UDVQK2daWXlHcllpSHp3dDZVTDV5M3poVEQ4bFI1bm5idm1uRlY4a1JLdkV3c1BsVzhUbE8wRkcrcDk2cVBIRnArZXpDRnlZZHlsT0ZOdXN3TzRHZndYTjd3YS8xZmo4ZlViRVlFYWFobWtrYnRtVkNabjlKNUphdXNPZmRoeVpJcGltL0M0T1hYMm9GWk1ESjR3ek5ieC9KQjh6bzdTV1dGZHNuYXVQQVZzWWY2TnNxM2FOR0xyV0Z3Y0dSTXorWCtDeTVESTU1L09Zc1ZVK0lCcVA5dG1ETHMyUGhORnI3SFo3UzZhbkk2c1BNWXJKWllyRXU2dE12bk5oR1FnOXhPeGQ4ckU1TXhSMWxrRzRLaFpKcXdsck5aWWVtUTI3Nkw3c3dTZDdTOVM0amFkcGYwUytzeGNFUjkwOEJYVjc1eWd2NURyeVRSL2JpOUhIQktrYVp3T1c1NWVFenhWSTlwdEJzYXVGTmp4bG5LUzVMWmFPZm1aZlJTcm1heUdIUWsvbzF4RFVUaVpQSmRkKzVyUXkvZTdsSVhRVWZjR2dhTm5mT2o4SDg2MGlOLzJES2xOM1hZcFc3QXlhOHQyTi93RlNZV0E1QTRPVSt4SGtMejhJL25ES2xWY0svT2w3Z29uVnE3QTJ3QnpBZ2tWMzEwcWFsYk1SK0VvYUY5Y1h2d3FSTmRhYnRwUU55djhvRmNXT211MkIzZTJWZDdoRUJoZVpPUlA3UExDSHlEc1Y5TGNMYThXMW5QK1hRdUcwZFhLa0RjOS9QV2xHUzEvNnc4SktFaUNwUThuVzZ4ODdSdURmdFE2cVZFaVlCRFJOZEs4bGJ4ck44Zk0vMW9rVTQ3dlpHcUE2eUw5Y2pjTElleENyVGxNdTgwaGdtNXhkTUJvOUx2cEZYaUZERUg1N0J2UmNia1RyS2cyN3pGRElCUVBMbDFSK1B5UHMvdWZxeFA4QlJCaDJjcmVXUzJIckMrWklwY2Z0UUcyUWpBaW5Ja2R6Vm1lNW80QU9udlJFc3ZNbytjQncyMXVsME1LbldEb1dtd3dhL25VdEFSMzJZdG5ISDhTWFlMS1lvb244VG15d2g4dlV3T25yU0p5UnpIWDFkdElYWFFPdUw2cUpvdWozR3p0YnJuakFFZnJ3Qmh4ZVl4OE0zOTVKWlNxb2U3ZHFBRkYzTHl4b0Jmd09WVStDRHRuT2doK0gvNS9OYTBnMnYxUEFyZWx0TjBpNGNwTzA0eVM0UTJtQXlDdUlwanJsSDBqUkxoNHN3aTBlQVJ6VWhReGZ0ZTFXTU1XZGNENXVjR0VacWlRS2NFblFFZ0VGUjRmVHN5WC9yVVVVaDNjdUhtUTJhd0lQTGdXdnI3QmZwZU90Rkhqd1hPK1JnTFU0V0x1UlBYYTR0ajdOaU94YjE3MzFyRDhvcEwzSzJsaENCeHR3cUJWZEF6dnRPQTR5T2ZyU1JvTTA2YUVWbEI4Wlc4RU54SVlHd21aZDQ1RUJHZ1hqbVlxZGE1elJHUFlLUXkrODJPbGV1b3VqUE5wNUp0bkVqRGR1cDBRPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRFBISU5NSXlJN2t3a0RXRnh3SUJFSUE3TUx2eHZidi90SDlaNm1PVUhiY094MzdQWVFkWFdKVFdnejV2b1JVbzg0NGxDVStJK01NcFhwR1BwM2IxOWkySDVsUmJJcXNNNll5a2ZGUT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDMzOTR9 https://883985286148.dkr.ecr.eu-west-2.amazonaws.com
+[root@ip-172-31-4-177 nginx]# docker login -u AWS -p eyJwYXlsb2FkIjoib3o1RXdYY3NvbDExMyt0UDVQK2daWXlHcllpSHp3dDZVTDV5M3poVEQ4bFI1bm5idm1uRlY4a1JLdkV3c1BsVzhUbE8wRkcrcDk2cVBIRnArZXpDRnlZZHlsT0ZOdXN3TzRHZndYTjd3YS8xZmo4ZlViRVlFYWFobWtrYnRtVkNabjlKNUphdXNPZmRoeVpJcGltL0M0T1hYMm9GWk1ESjR3ek5ieC9KQjh6bzdTV1dGZHNuYXVQQVZzWWY2TnNxM2FOR0xyV0Z3Y0dSTXorWCtDeTVESTU1L09Zc1ZVK0lCcVA5dG1ETHMyUGhORnI3SFo3UzZhbkk2c1BNWXJKWllyRXU2dE12bk5oR1FnOXhPeGQ4ckU1TXhSMWxrRzRLaFpKcXdsck5aWWVtUTI3Nkw3c3dTZDdTOVM0amFkcGYwUytzeGNFUjkwOEJYVjc1eWd2NURyeVRSL2JpOUhIQktrYVp3T1c1NWVFenhWSTlwdEJzYXVGTmp4bG5LUzVMWmFPZm1aZlJTcm1heUdIUWsvbzF4RFVUaVpQSmRkKzVyUXkvZTdsSVhRVWZjR2dhTm5mT2o4SDg2MGlOLzJES2xOM1hZcFc3QXlhOHQyTi93RlNZV0E1QTRPVSt4SGtMejhJL25ES2xWY0svT2w3Z29uVnE3QTJ3QnpBZ2tWMzEwcWFsYk1SK0VvYUY5Y1h2d3FSTmRhYnRwUU55djhvRmNXT211MkIzZTJWZDdoRUJoZVpPUlA3UExDSHlEc1Y5TGNMYThXMW5QK1hRdUcwZFhLa0RjOS9QV2xHUzEvNnc4SktFaUNwUThuVzZ4ODdSdURmdFE2cVZFaVlCRFJOZEs4bGJ4ck44Zk0vMW9rVTQ3dlpHcUE2eUw5Y2pjTElleENyVGxNdTgwaGdtNXhkTUJvOUx2cEZYaUZERUg1N0J2UmNia1RyS2cyN3pGRElCUVBMbDFSK1B5UHMvdWZxeFA4QlJCaDJjcmVXUzJIckMrWklwY2Z0UUcyUWpBaW5Ja2R6Vm1lNW80QU9udlJFc3ZNbytjQncyMXVsME1LbldEb1dtd3dhL25VdEFSMzJZdG5ISDhTWFlMS1lvb244VG15d2g4dlV3T25yU0p5UnpIWDFkdElYWFFPdUw2cUpvdWozR3p0YnJuakFFZnJ3Qmh4ZVl4OE0zOTVKWlNxb2U3ZHFBRkYzTHl4b0Jmd09WVStDRHRuT2doK0gvNS9OYTBnMnYxUEFyZWx0TjBpNGNwTzA0eVM0UTJtQXlDdUlwanJsSDBqUkxoNHN3aTBlQVJ6VWhReGZ0ZTFXTU1XZGNENXVjR0VacWlRS2NFblFFZ0VGUjRmVHN5WC9yVVVVaDNjdUhtUTJhd0lQTGdXdnI3QmZwZU90Rkhqd1hPK1JnTFU0V0x1UlBYYTR0ajdOaU94YjE3MzFyRDhvcEwzSzJsaENCeHR3cUJWZEF6dnRPQTR5T2ZyU1JvTTA2YUVWbEI4Wlc4RU54SVlHd21aZDQ1RUJHZ1hqbVlxZGE1elJHUFlLUXkrODJPbGV1b3VqUE5wNUp0bkVqRGR1cDBRPT0iLCJkYXRha2V5IjoiQVFFQkFIaE5EeldWbllHeWxLM3RVYWxIQU5wbXJuUXphNXc0VzRjSFlNVTgydGJOSXdBQUFINHdmQVlKS29aSWh2Y05BUWNHb0c4d2JRSUJBREJvQmdrcWhraUc5dzBCQndFd0hnWUpZSVpJQVdVREJBRXVNQkVFRFBISU5NSXlJN2t3a0RXRnh3SUJFSUE3TUx2eHZidi90SDlaNm1PVUhiY094MzdQWVFkWFdKVFdnejV2b1JVbzg0NGxDVStJK01NcFhwR1BwM2IxOWkySDVsUmJJcXNNNll5a2ZGUT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE1OTU0NDMzOTR9 https://883985286148.dkr.ecr.eu-west-2.amazonaws.com
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[root@ip-172-31-4-177 nginx]# docker build -t tinhocthatladongian .
+Sending build context to Docker daemon  3.584kB
+Step 1/2 : FROM nginx
+latest: Pulling from library/nginx
+
+
+
+
+
+Digest: sha256:64a5064d6d62eda163b97648b60b15658d247efafc1980cafb3d760f1abf5249
+Status: Downloaded newer image for nginx:latest
+ ---> 8cf1bfb43ff5
+Step 2/2 : COPY html /usr/share/nginx/html
+ ---> ce4233c25ef6
+Successfully built ce4233c25ef6
+Successfully tagged tinhocthatladongian:latest
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:latest 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian:latest
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian:latest
+The push refers to repository [883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian]
+
+
+
+
+
+
+no basic auth credentials
+[root@ip-172-31-4-177 nginx]# docker images
+REPOSITORY                                                         TAG                 IMAGE ID            CREATED              SIZE
+883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian   latest              ce4233c25ef6        About a minute ago   132MB
+tinhocthatladongian                                                latest              ce4233c25ef6        About a minute ago   132MB
+nginx                                                              latest              8cf1bfb43ff5        3 hours ago          132MB
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:latest 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatl[root@ip-172-31-4-177 nginx]# docker build -t tinhocthatladongian .
+ian:v1 .
+Sending build context to Docker daemon  3.584kB
+Step 1/2 : FROM nginx
+ ---> 8cf1bfb43ff5
+Step 2/2 : COPY html /usr/share/nginx/html
+ ---> Using cache
+ ---> ce4233c25ef6
+Successfully built ce4233c25ef6
+Successfully tagged tinhocthatladongian:v1
+[root@ip-172-31-4-177 nginx]# docker build -t tinhocthatladong[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:latest 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian:latest
+[root@ip-172-31-4-177 nginx]# docker tag tinhocthatladongian:latest 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatl[root@ip-172-31-4-177 nginx]# docker build -t tinhocthatladongian:v1 .
+[root@ip-172-31-4-177 nginx]# docker images
+[root@ip-172-31-4-177 nginx]# docker push 883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian:latest
+The push refers to repository [883985286148.dkr.ecr.us-west-2.amazonaws.com/tinhocthatladongian]
+
+
+
+
+
+
+no basic auth credentials
+[root@ip-172-31-4-177 nginx]# 
