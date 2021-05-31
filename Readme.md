@@ -1,4 +1,5 @@
-﻿Bài 25: Docker 1 / DevOps Docker là gì? cài docker và docker-compose trên EC2/AWS và Windowscompose trên EC2/AWS
+# Docker căn bản và nâng cao
+## Bài 25: Docker 1 / DevOps Docker là gì? cài docker và docker-compose trên EC2/AWS và Windowscompose trên EC2/AWS
 ---------------------------------------------------------------------------------------------
 sudo yum update -y
 sudo yum install -y docker
@@ -9,7 +10,7 @@ sudo usermod -a -G docker ec2-user
 sudo curl -L "https://github.com/docker/compose/rel... -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
-Bài 26: Docker 2/DevOps triển khai tạo Image, Container&Docker Hub cho khách hàng và đội lập trình
+## Bài 26: Docker 2/DevOps triển khai tạo Image, Container&Docker Hub cho khách hàng và đội lập trình
 ---------------------------------------------------------------------------
 Các lệnh với image
 - Tìm image để cài đặt
@@ -84,7 +85,7 @@ docker rm $(docker ps -a -q)
 docker rmi -f $(docker images -a -q)
 
 
-Bài 27:DevOps Docker 3 / Dockerfile đây chính là lý do tăng lương, tăng vị trí cho các bạn developer
+## Bài 27:DevOps Docker 3 / Dockerfile đây chính là lý do tăng lương, tăng vị trí cho các bạn developer
 --------------------------------------------------------------
 1. Tạo Dockerfile
 
