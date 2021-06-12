@@ -445,7 +445,7 @@ Các câu lệnh thao tác với mạng
 # docker network connect       Tạo kết nối mạng
 # docker network disconnect    Ngắt kết nối mạng
 ```
-
+```
 Danh sách đầy đủ các khóa học như AWS, DevOps, FullStack, Dockers, Jenkins, Tin học Văn phòng, Quản lý dự án, Agile Scrum, AI Machine Learning, Big Data...
 <https://www.youtube.com/channel/UCylBvJVCgY3AP_iU2BzDSpA/playlists>
 
@@ -457,6 +457,6 @@ Danh sách đầy đủ các khóa học như AWS, DevOps, FullStack, Dockers, J
 📞 Vui lòng liên hệ
 Mr. Bảo
 Phone/Zalo: 0933.73.93.56
-
+```
 ---
 Trên là tài liệu mình sưu tầm được từ nguồn internet có bổ sung chút ít theo ý cá nhân mang tính chất sưu tầm làm tài liệu cá nhân và chia sẻ cho những người bạn. Nên mình giữa nguyên thông tin của tác giả.
