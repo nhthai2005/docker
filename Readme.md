@@ -1,94 +1,99 @@
 # Docker căn bản và nâng cao
 ## Bài 25: Docker 1 / DevOps Docker là gì? cài docker và docker-compose trên EC2/AWS và Windowscompose trên EC2/AWS
----------------------------------------------------------------------------------------------
+```
 sudo yum update -y
 sudo yum install -y docker
 sudo service docker start
 sudo usermod -a -G docker ec2-user
-
+```
 - Cài docker-compose
+```
 sudo curl -L "https://github.com/docker/compose/rel... -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-
+```
 ## Bài 26: Docker 2/DevOps triển khai tạo Image, Container&Docker Hub cho khách hàng và đội lập trình
----------------------------------------------------------------------------
+```
 Các lệnh với image
 - Tìm image để cài đặt
-docker search centos
+`docker search centos`
 - List các image đang có
-docker image ls
+`docker image ls`
 - Xóa image
-sudo docker rmi [Image ID]
+`sudo docker rmi [Image ID]`
 Chú ý: Các image mà có container đang chạy thì sẽ không xóa được mà phải xóa container liên quan tới nó trước
 - Pull image về
-docker pull centos:7
+`docker pull centos:7`
 
 Làm việc với container
 
 - Chạy 1 container từ image
- docker run --privileged -d -p 80:80 [Image Name] /sbin/init
+```
+docker run --privileged -d -p 80:80 [Image Name] /sbin/init
 docker run --privileged -d -p 80:80 centos:7 /sbin/init
-
+```
 - Vào container để chạy lệnh
-docker exec -it [Container ID] /bin/bash 
+`docker exec -it [Container ID] /bin/bash `
 
 - Cài đặt apache
+```
 yum -y install httpd
 systemctl start httpd
 systemctl enable httpd
 
 echo "Hello Tin Hoc That La Don Gian" > /var/www/html/index.html
-
+```
 - Thoát ra khỏi container
-exit
+`exit`
 
 - Tạo image để triển khai cho máy khác
+```
 docker commit -m "Comment" -a "Tác giả"  [Container ID] [Image Name]
 docker commit -m "Centos Project01" -a "Nguyen Quoc Bao" d452f1a1b69d tinhocthatladongian/project01:v1
-
+```
 - Đăng nhập vào docker/hub
-docker login
+`docker login`
 
 - Đưa image lên docker hup để mọi người cùng sử dụng
+```
 docker push [Tên image]
 docker push tinhocthatladongian/project01:v1
- 
+ ```
 - Check các container đang chạy
-sudo docker ps -a
+`sudo docker ps -a`
 
 - Xem trạng thái container
-docker container ls -a
+`docker container ls -a`
 
 - Xóa containner
-sudo docker rm [Container ID]
+`sudo docker rm [Container ID]`
 
 - Stop container
-docker container stop [Container ID]
+`docker container stop [Container ID]`
 
 - Restart container
-docker container restart [Container ID]
+`docker container restart [Container ID]`
 
 - Pause container
-docker container pause  [Container ID]
+`docker container pause  [Container ID]`
 
 - Truy cập vào các container đang chạy
-docker container attach [Container ID]
+`docker container attach [Container ID]`
 
 
 - Lệnh stop toàn bộ container
-docker stop $(docker ps -a -q)
+`docker stop $(docker ps -a -q)`
 
 - Lệnh xóa toàn bộ container
-docker rm $(docker ps -a -q)
+`docker rm $(docker ps -a -q)`
 
 - Lệnh xóa toàn bộ image
-docker rmi -f $(docker images -a -q)
+`docker rmi -f $(docker images -a -q)`
 
 
 ## Bài 27:DevOps Docker 3 / Dockerfile đây chính là lý do tăng lương, tăng vị trí cho các bạn developer
 --------------------------------------------------------------
 1. Tạo Dockerfile
-
+```
 # Get base image
 FROM centos:7
 
@@ -116,12 +121,12 @@ CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
 EXPOSE 80
 
-
+```
 2. Build image
-docker build -t httpd_sample .
+`docker build -t httpd_sample .`
 
 3. Tạo và chạy container
-docker run -d -p 80:80 httpd_sample
+`docker run -d -p 80:80 httpd_sample`
 
 
 
@@ -130,6 +135,7 @@ Bài 28: DevOps Docker 4 / Docker-compose docker nâng cao
 Script
 http://tinhocthatladongian.com/download/aws_bai28.txt
 1. Cài EC2
+```
 #!/bin/bash
 yum update -y
 yum install -y docker
@@ -137,21 +143,22 @@ service docker start
 chkconfig docker on
 curl -L "https://github.com/docker/compose/releases/download/1.11.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
-
+```
 
 
 Sample
 
 1. Tạo file Dockerfile
-
+```
 FROM centos:7
 RUN yum -y update && \
     yum -y install httpd php
 WORKDIR /var/www/html
 ADD ./code /var/www/html
 EXPOSE 80
-
-2.Tạo file docker-compose.yml
+```
+2.Tạo file `docker-compose.yml`
+```
 version: '3'
 services:                                                                                       
   web:                                                                                          
@@ -161,22 +168,22 @@ services:
       - ./code:/var/www/html	
     ports:                                                                                      
       - "80:80"
-	  
+```	  
 	  
 - Build image
-$ docker-compose build
+`$ docker-compose build`
 
 - Chạy container
-$ docker-compose up
+`$ docker-compose up`
 
 - Stop
-$ docker-compose stop
+`$ docker-compose stop`
 
 - Start lại container
-$ docker-compose start
+`$ docker-compose start`
 
 - Stop và xóa container
-$ docker-compose down
+`$ docker-compose down`
 
 
 
@@ -185,8 +192,8 @@ https://github.com/dockersamples/example-voting-app.git
 
 Dockerfile là gì
 Là file config dùng để build các image mới dựa trên một image có sẵn
-
-Các lệnh trong Dockerfile
+```
+Các lệnh trong `Dockerfile`
 FROM: Lấy 1 image trên docker hub
 LABEL: Thông tin người bảo trì dockerfile
 ENV: thiết lập một biến môi trường
@@ -199,20 +206,22 @@ ARG: Định nghĩa giá trị biến được dùng trong lúc build image
 ENTRYPOINT: cung cấp lệnh và đối số cho một container thực thi
 EXPOSE: khai báo port lắng nghe của image
 VOLUME: tạo một điểm gắn thư mục để truy cập và lưu trữ data.
-
+```
 
 Bài 29: DevOps Docker 5 / Docker Volume, Networks docker nâng cao
 ------------------------------------------------------------
 http://tinhocthatladongian.com/download/Aws_Bai29.txt
 Các lệnh xóa đồng loạt
+```
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 docker rmi -f $(docker images -a -q)
 docker-compose up -d
-
+```
 
 
 1. Volume
+```
 # docker volume create       Tạo mạng mới
 # docker volume inspect      Xem chi tiết mạng
 # docker volume ls           Hiển thị những mạng đang có
@@ -228,10 +237,10 @@ docker container run --name mysql -e MYSQL_ROOT_PASSWORD=pass -p 3306:3306 -d my
 
 docker volume create pj01_data
 docker container run --name mysql -v pj01_data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=pass -p 3306:3306 -d mysql:5.7
-
+```
 
 2. Networks
-
+```
 Ví dụ 1
 Tạo 1 mạng lớp C
 docker network create --subnet 192.168.1.0/24 network1
@@ -246,12 +255,12 @@ docker attach container1
 Ví dụ 2
 # docker run --name mysql --network network1 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5.7
 # docker run --name wordpress --network network1 -e WORDPRESS_DB_PASSWORD=my-secret-pw -p 8080:80 -d wordpress
+```
 
 
 
 
-
-
+```
 Sampe 1 tạo DB MYSQL
 sample-project/
              ├ docker/
@@ -344,11 +353,11 @@ INSERT INTO users (id,name,email) VALUES (2, 'BAo','bao@mail.co.jp');
 
 truy cập vào từ ngoài bằng Navicat
 mysql --host 127.0.0.1 --port 3314 -u user -p 
+```
 
 
 
-
-
+```
 Sample 2
 mkdir { my-wordpress-dir-name }
 cd { my-wordpress-dir-name } 
@@ -401,7 +410,7 @@ MYSQL_RANDOM_ROOT_PASSWORD=yes
 MYSQL_DATABASE=wordpress
 MYSQL_USER=admin
 MYSQL_PASSWORD=pass
-
+```
 
 
 
@@ -417,15 +426,16 @@ Sử dụng Volume khi nào
 - Khi cần backup, restore hoặc migrate dữ liệu từ Docker Host này sang Docker Host khác.
 
 Lệnh liên quan tới volume
+```
 # docker volume create        Tạo mạng mới
 # docker volume inspect       Xem chi tiết mạng
 # docker volume ls             Hiển thị những mạng đang có
 # docker volume rm             Xóa volume
 # docker volume prune         Xóa toàn bộ volume
-
+```
 2. Docker networks
 Để kết nối các container trong cùng mạng hoặc khác mạng với nhau.
-
+```
 Các câu lệnh thao tác với mạng
 # docker network create        Tạo mạng mới
 # docker network inspect       Xem chi tiết mạng
@@ -434,10 +444,10 @@ Các câu lệnh thao tác với mạng
 # docker network prune         Xóa đồng loạt các mạng không sử dụng
 # docker network connect       Tạo kết nối mạng
 # docker network disconnect    Ngắt kết nối mạng
-
+```
 
 Danh sách đầy đủ các khóa học như AWS, DevOps, FullStack, Dockers, Jenkins, Tin học Văn phòng, Quản lý dự án, Agile Scrum, AI Machine Learning, Big Data...
-https://www.youtube.com/channel/UCylBvJVCgY3AP_iU2BzDSpA/playlists
+<https://www.youtube.com/channel/UCylBvJVCgY3AP_iU2BzDSpA/playlists>
 
 
 ⚙️Dịch vụ Freelance
