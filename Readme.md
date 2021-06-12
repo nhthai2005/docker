@@ -209,7 +209,7 @@ VOLUME: tạo một điểm gắn thư mục để truy cập và lưu trữ dat
 ```
 
 Bài 29: DevOps Docker 5 / Docker Volume, Networks docker nâng cao
-------------------------------------------------------------
+
 http://tinhocthatladongian.com/download/Aws_Bai29.txt
 Các lệnh xóa đồng loạt
 ```
