@@ -457,3 +457,6 @@ Danh sách đầy đủ các khóa học như AWS, DevOps, FullStack, Dockers, J
 📞 Vui lòng liên hệ
 Mr. Bảo
 Phone/Zalo: 0933.73.93.56
+
+---
+Trên là tài liệu mình sưu tầm được từ nguồn internet có bổ sung chút ít theo ý cá nhân mang tính chất sưu tầm làm tài liệu cá nhân và chia sẻ cho những người bạn. Nên mình giữa nguyên thông tin của tác giả.
