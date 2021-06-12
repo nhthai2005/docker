@@ -25,7 +25,7 @@ Chú ý: Các image mà có container đang chạy thì sẽ không xóa đượ
 `docker pull centos:7`
 
 Làm việc với container
-
+```
 - Chạy 1 container từ image
 ```
 docker run --privileged -d -p 80:80 [Image Name] /sbin/init
@@ -444,12 +444,12 @@ Các câu lệnh thao tác với mạng
 # docker network prune         Xóa đồng loạt các mạng không sử dụng
 # docker network connect       Tạo kết nối mạng
 # docker network disconnect    Ngắt kết nối mạng
-
+```
 
 Danh sách đầy đủ các khóa học như AWS, DevOps, FullStack, Dockers, Jenkins, Tin học Văn phòng, Quản lý dự án, Agile Scrum, AI Machine Learning, Big Data...
 <https://www.youtube.com/channel/UCylBvJVCgY3AP_iU2BzDSpA/playlists>
 
-
+```
 ⚙️Dịch vụ Freelance
 - Tư vấn & triển khai giải pháp hệ thống cho doanh nghiệp
 - Phát triển phần mềm Website, Mobile App, PC App
